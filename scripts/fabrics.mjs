@@ -1,3 +1,16 @@
+import { grid } from "./pyjamas.mjs";
+
+const likedBlanks = `<aside class="blanks">
+  <h2>Blanks we like</h2>
+  ${grid([
+    { asin: "B0C24KD4J6", title: "Blue & White Blank Pyjamas", line: "White top, blue sleeves and bottoms." },
+    { asin: "B0C28TCKL6", title: "Pink & White Blank Pyjamas", line: "White top, pink sleeves and bottoms." },
+    { asin: "B0BTZ7T4RJ", title: "Blank Dinosaur Pyjamas", line: "White top, dinosaur print on the sleeves and bottoms." },
+    { asin: "B0BWK4XZRT", title: "Unicorn Blank Pyjamas", line: "White top, unicorn print on the sleeves and bottoms." }
+  ])}
+  <p><a href="/pyjamas/size-guide/">More colours and sizes in the size guide</a></p>
+</aside>`;
+
 export const fabricPages = [
   {
     path: "/fabrics/cotton/",
@@ -33,11 +46,7 @@ export const fabricPages = [
 <p>For names, numbers and one-colour designs, start with <a href="/methods/standard-htv/">standard HTV</a>. Siser EasyWeed, which lists 100% cotton, is 150°C (305°F) for 10–15 seconds, medium pressure, hot or cold peel. Garment Films One Flex, whose chart includes cotton, uses 140°C for 8 seconds as the standard recommendation. Glitter, flock and the speciality films have their own pages.</p>
 <p>For a photograph or a full-colour design, use <a href="/methods/dtf/">DTF</a>. Xpres describe it for cotton as well as polyester and blends. Their product sheet presses at 160°C for 15 seconds, light to medium, cold peel, then a second 15-second press. Their general guide says 150–160°C for 10–15 seconds and mentions raising the temperature slightly for heavier cotton, without a new number. Garment Films’ FAQ lists a basic DTF range of 140–150°C for 8–10 seconds.</p>
 <p>Pre-press cotton. It holds moisture, and a damp patch is a common reason vinyl lifts after a wash that looked fine in the press. Siser’s lift fix, if you do need one, is to cover the design and press again for 5–10 seconds. Wait 24 hours before the first wash, turn the shirt inside out, and skip fabric conditioner. Both Siser and Garment Films say that.</p>
-<aside class="blanks">
-  <h2>Blanks we like</h2>
-  <p><a href="/pyjamas/size-guide/">Blank kids' pyjamas we use</a></p>
-  <p>Sizes and the Amazon UK listings are on the size guide.</p>
-</aside>
+${likedBlanks}
 <p>Kids’ cotton vests and pyjamas are still cotton, with extra care around prints, poppers and nightwear rules. That sits on the <a href="/fabrics/childrens-clothing/">children’s clothing</a> page. For blank pyjama sets, see <a href="/pyjamas/htv/">HTV on the white chest</a>, <a href="/pyjamas/embroidery/">embroidery</a> and <a href="/pyjamas/sublimation/">why these cotton sets will not sublimate</a>. Thick cotton canvas is on the <a href="/fabrics/tote-bags/">tote bag</a> page.</p>
 `
   },
@@ -214,11 +223,7 @@ export const fabricPages = [
 <p>Siser’s heat-sensitive article says HI-5 is laboratory tested and certified for baby clothing, and the product is OEKO-TEX Standard 100 Class I. That is a statement about the film, not a certificate for your finished pyjamas. EcoStretch is the low-temperature stretch film; it is listed for cotton, polyester and elastane, and the instruction sheet does not call it a babywear product.</p>
 <p>Everyday EasyWeed at 150°C remains the cotton chart if the garment can take it. Say so on a test seam before you press a name across the chest. Keep plastic poppers, zips and existing prints off the platen. They melt or mark, and that is not a vinyl fault.</p>
 <p><a href="/methods/sublimation-polyester/">Sublimation</a> only works on light polyester, at 190–205°C on the charts we cite. That is hot for a child’s top. Test a spare. <a href="/methods/dtf/">DTF</a> examples start around 140°C and go to 160°C. The cooler end is kinder, and it is still not a promise.</p>
-<aside class="blanks">
-  <h2>Blanks we like</h2>
-  <p><a href="/pyjamas/size-guide/">Blank kids' pyjamas we use</a></p>
-  <p>Sizes and the Amazon UK listings are on the size guide.</p>
-</aside>
+${likedBlanks}
 <p>If a press leaves a shiny box, stop. The <a href="/troubleshooting/scorch-marks/">scorch page</a> explains why pressing again hotter will not fix it.</p>
 `
   },
