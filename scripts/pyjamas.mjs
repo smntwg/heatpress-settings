@@ -1,5 +1,3 @@
-const HELD = new Set(["B0GMQZY2WZ", "B0GH2MG9X5"]);
-
 function esc(value) {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -9,9 +7,6 @@ function esc(value) {
 }
 
 function card(product) {
-  if (HELD.has(product.asin)) {
-    throw new Error(`Refusing held listing ${product.asin}`);
-  }
   const href = `https://www.amazon.co.uk/dp/${product.asin}`;
   return `<li class="blank-card"><h3>${esc(product.title)}</h3><p>${esc(product.line)}</p><a class="btn" href="${href}" rel="noopener noreferrer">View on Amazon</a></li>`;
 }
@@ -61,6 +56,11 @@ const plain = [
     asin: "B0GMRFXVZX",
     title: "Mink & White Blank Pyjamas",
     line: "White top, mink sleeves and bottoms."
+  },
+  {
+    asin: "B0GMQZY2WZ",
+    title: "Pastel Purple & White Blank Pyjamas",
+    line: "White top, pastel purple sleeves and bottoms."
   }
 ];
 
@@ -125,6 +125,7 @@ const kidsCatalogue = [
   { group: "Red", asin: "B0GYSQPXHR", title: "Red Stripe Blank Pyjamas", line: "White top, red stripe on the sleeves and bottoms." },
   { group: "Neutrals", asin: "B0GMRFXVZX", title: "Mink & White Blank Pyjamas", line: "White top, mink sleeves and bottoms." },
   { group: "Neutrals", asin: "B0GYSLPRQN", title: "Natural Stripe Blank Pyjamas", line: "White top, natural stripe on the sleeves and bottoms." },
+  { group: "Purple", asin: "B0GMQZY2WZ", title: "Pastel Purple & White Blank Pyjamas", line: "White top, pastel purple sleeves and bottoms." },
   { group: "Purple", asin: "B0FCSH6JLZ", title: "Pastel Purple Stripe Blank Pyjamas", line: "White top, pastel purple stripe on the sleeves and bottoms." },
   { group: "Prints", asin: "B0BTZ7T4RJ", title: "Blank Dinosaur Pyjamas", line: "White top, dinosaur print on the sleeves and bottoms." },
   { group: "Prints", asin: "B0GWJNXWLG", title: "Digger Print Blank Pyjamas", line: "White top, digger print on the sleeves and bottoms." },
@@ -146,6 +147,11 @@ const babyProducts = [
     asin: "B0GH2368W1",
     title: "Light Blue Blank Baby Pyjamas",
     line: "Long-sleeve baby set in light blue. 100% cotton, from 0–3 months to 1–2 years."
+  },
+  {
+    asin: "B0GH2MG9X5",
+    title: "Pink Blank Baby Pyjamas",
+    line: "Long-sleeve baby set in pink. 100% cotton, from 0–3 months to 1–2 years."
   }
 ];
 
@@ -514,9 +520,9 @@ ${designTable()}
 </table>
 </div>
 ${babyDesignTable()}
-<p>White and light blue baby sets are at the bottom of this page. A 6–12 month baby and a 6–12 month raglan can both be in the house at once. Use the chart that matches the garment, not the age alone.</p>
+<p>White, light blue and pink baby sets are at the bottom of this page. A 6–12 month baby and a 6–12 month raglan can both be in the house at once. Use the chart that matches the garment, not the age alone.</p>
 `,
-  closing: blanks(`<p>Kids’ raglan sets, from 6–12 months to 5–6 years, grouped by colour and print. Baby sets follow, on their own chart above.</p>${grouped(kidsCatalogue)}<h3 class="blank-group">Baby sets</h3><p>A different long-sleeve set, not the raglan measurements. Both are 100% cotton.</p>${grid(babyProducts)}`)
+  closing: blanks(`<p>Kids’ raglan sets, from 6–12 months to 5–6 years, grouped by colour and print. Baby sets follow, on their own chart above.</p>${grouped(kidsCatalogue)}<h3 class="blank-group">Baby sets</h3><p>A different long-sleeve set, not the raglan measurements. These are 100% cotton.</p>${grid(babyProducts)}`)
 };
 
 export const pyjamaPages = [htvPage, embroideryPage, sublimationPage, christmasPage, sizePage];
