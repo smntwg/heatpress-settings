@@ -6,9 +6,40 @@ function esc(value) {
     .replace(/"/g, "&quot;");
 }
 
+const photos = {
+  B0C24KD4J6: { w: 600, h: 803, alt: "Blue and white kids pyjamas with white top" },
+  B0BSR58NC9: { w: 600, h: 799, alt: "Blue stripe kids pyjamas with white top" },
+  B0BRT24PH2: { w: 600, h: 1035, alt: "Blue cloud print kids pyjamas with white top" },
+  B0BT21ML1J: { w: 600, h: 1016, alt: "Blue stars kids pyjamas with white top" },
+  B0C28TCKL6: { w: 600, h: 801, alt: "Pink and white kids pyjamas with white top" },
+  B0BXB676WT: { w: 600, h: 801, alt: "Pink stripe kids pyjamas with white top" },
+  B0BRY4S423: { w: 600, h: 1016, alt: "Pink cloud print kids pyjamas with white top" },
+  B0BXB21ZZ3: { w: 600, h: 1005, alt: "Pink stars kids pyjamas with white top" },
+  B0GMRKRZ7K: { w: 600, h: 1026, alt: "Sage and white kids pyjamas with white top" },
+  B0F88C6VRC: { w: 600, h: 1012, alt: "Pastel sage stripe kids pyjamas with white top" },
+  B0GYSQPXHR: { w: 600, h: 923, alt: "Red stripe kids pyjamas with white top" },
+  B0GMRFXVZX: { w: 600, h: 1009, alt: "Mink and white kids pyjamas with white top" },
+  B0GYSLPRQN: { w: 600, h: 1011, alt: "Natural stripe kids pyjamas with white top" },
+  B0GMQZY2WZ: { w: 600, h: 1011, alt: "Pastel purple and white kids pyjamas with white top" },
+  B0FCSH6JLZ: { w: 600, h: 1015, alt: "Pastel purple stripe kids pyjamas with white top" },
+  B0BTZ7T4RJ: { w: 600, h: 991, alt: "Blank dinosaur kids pyjamas with white top" },
+  B0GWJNXWLG: { w: 600, h: 1028, alt: "Digger print kids pyjamas with white top" },
+  B0BWK4XZRT: { w: 600, h: 1062, alt: "Unicorn kids pyjamas with white top" },
+  B0GWJKDQGJ: { w: 600, h: 1025, alt: "Fairy princess kids pyjamas with white top" },
+  B0C1949NZT: { w: 600, h: 1043, alt: "Heart print kids pyjamas with white top" },
+  B0BSC9D8DG: { w: 600, h: 1015, alt: "Ballerina kids pyjamas with white top" },
+  B0GWJD7YT7: { w: 600, h: 1012, alt: "Teddy bear kids pyjamas with white top" },
+  B0FQPF13NZ: { w: 600, h: 1004, alt: "Bunny print kids pyjamas with white top" },
+  B0CHK512ZJ: { w: 600, h: 965, alt: "White blank baby pyjamas" },
+  B0GH2368W1: { w: 600, h: 954, alt: "Light blue blank baby pyjamas" },
+  B0GH2MG9X5: { w: 600, h: 966, alt: "Pink blank baby pyjamas" }
+};
+
 function card(product) {
+  const photo = photos[product.asin];
+  if (!photo) throw new Error(`No photo for ${product.asin}`);
   const href = `https://www.amazon.co.uk/dp/${product.asin}`;
-  return `<li class="blank-card"><h3>${esc(product.title)}</h3><p>${esc(product.line)}</p><a class="btn" href="${href}" rel="noopener noreferrer">View on Amazon</a></li>`;
+  return `<li class="blank-card"><img src="/img/blanks/${product.asin}.webp" width="${photo.w}" height="${photo.h}" alt="${esc(photo.alt)}" loading="lazy" decoding="async"><h3>${esc(product.title)}</h3><p>${esc(product.line)}</p><a class="btn" href="${href}" rel="noopener noreferrer">View on Amazon</a></li>`;
 }
 
 function grid(products, wide) {
