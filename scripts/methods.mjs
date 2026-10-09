@@ -18,6 +18,7 @@ export const methodPages = [
     ],
     related: [
       { href: "/fabrics/cotton/", label: "100% cotton" },
+      { href: "/pyjamas/htv/", label: "HTV on kids' pyjamas" },
       { href: "/fabrics/polyester/", label: "Polyester and dye migration" },
       { href: "/fabrics/nylon/", label: "Nylon needs a different film" },
       { href: "/troubleshooting/vinyl-peeling/", label: "Vinyl peeling or lifting" },
@@ -55,7 +56,7 @@ export const methodPages = [
 <p>EasyWeed’s published list is 100% cotton, poly-cotton, 100% polyester and leather, all at the same heat. Garment Films’ chart covers cotton, polyester and polyester/cotton mixtures, and it says the films are not for nylon or coated fabrics. There is no separate “blend temperature” on either chart. Read the <a href="/fabrics/cotton/">cotton</a> and <a href="/fabrics/poly-cotton/">poly-cotton</a> notes before a first run.</p>
 <p>Polyester is where ordinary vinyl misbehaves. Dye in the shirt can creep into the film after pressing, or even after washing. Siser tie that to high temperature and high pressure, and they publish EasyWeed Sub Block at 130°C (265°F) as a blocker you can layer under other colours. Details are on the <a href="/fabrics/polyester/">polyester</a> page.</p>
 <h2>Children’s clothes and totes</h2>
-<p>A plain cotton child’s T-shirt can use the cotton row if the care label can take it. For babywear and heat-sensitive polyester, Siser’s HI-5 is the film they describe as certified for baby clothing: 120°C for 5 seconds on textiles up to 150 g/m², or 150°C if the fabric is heavier, at high pressure. That lives on the <a href="/fabrics/childrens-clothing/">children’s clothing</a> page, with the One Flex 120°C option. <a href="/fabrics/tote-bags/">Canvas totes</a> are not named separately; uncoated cotton canvas follows the cotton row after a proper pre-press.</p>
+<p>A plain cotton child’s T-shirt can use the cotton row if the care label can take it. For babywear and heat-sensitive polyester, Siser’s HI-5 is the film they describe as certified for baby clothing: 120°C for 5 seconds on textiles up to 150 g/m², or 150°C if the fabric is heavier, at high pressure. That lives on the <a href="/fabrics/childrens-clothing/">children’s clothing</a> page, with the One Flex 120°C option. Blank cotton pyjamas, and where a design sits on the chest, are on the <a href="/pyjamas/htv/">kids’ pyjama HTV</a> page. <a href="/fabrics/tote-bags/">Canvas totes</a> are not named separately; uncoated cotton canvas follows the cotton row after a proper pre-press.</p>
 `
   },
   {
@@ -77,6 +78,7 @@ export const methodPages = [
     ],
     related: [
       { href: "/methods/standard-htv/", label: "Standard HTV" },
+      { href: "/pyjamas/htv/", label: "Glitter on cotton pyjamas" },
       { href: "/troubleshooting/vinyl-peeling/", label: "If glitter lifts" },
       { href: "/fabrics/polyester/", label: "Polyester can scorch at this heat" },
       { href: "/fabrics/childrens-clothing/", label: "Children’s clothing" }
@@ -107,7 +109,7 @@ export const methodPages = [
 </div>
 <p>The EU Siser page also says glitter is layerable only as a top layer. If you are stacking colours, put glitter last and press it to its own instructions, not to the <a href="/methods/standard-htv/">everyday PU</a> time underneath.</p>
 <p>Garment Films’ Fahrenheit figures above are the usual conversion. They publish the chart in Celsius. Their Premium Glitter line is not the same product as printable glitter further down that PDF, which is listed at 160°C for 10–15 seconds with a warm peel. Read the row that matches the name on the roll.</p>
-<p>On <a href="/fabrics/cotton/">cotton</a> this heat is normal. On <a href="/fabrics/polyester/">polyester</a> it is the top end of what many shirts will accept without a shiny box around the design. Cover the garment. If you see scorch marks, stop and read the <a href="/troubleshooting/scorch-marks/">scorch guide</a> rather than pressing again hotter.</p>
+<p>On <a href="/fabrics/cotton/">cotton</a> this heat is normal. On <a href="/fabrics/polyester/">polyester</a> it is the top end of what many shirts will accept without a shiny box around the design. Cover the garment. If you see scorch marks, stop and read the <a href="/troubleshooting/scorch-marks/">scorch guide</a> rather than pressing again hotter. Cotton pyjamas can use this cotton row. Placement on the white chest is on the <a href="/pyjamas/htv/">pyjama HTV page</a>.</p>
 `
   },
   {
@@ -183,6 +185,7 @@ export const methodPages = [
     ],
     related: [
       { href: "/fabrics/nylon/", label: "Which of these list nylon" },
+      { href: "/pyjamas/htv/", label: "Stretch HTV on cotton pyjamas" },
       { href: "/fabrics/childrens-clothing/", label: "Lower-temperature options" },
       { href: "/troubleshooting/vinyl-peeling/", label: "Cold peel problems" },
       { href: "/methods/standard-htv/", label: "Everyday PU" }
@@ -212,7 +215,7 @@ export const methodPages = [
   </tbody>
 </table>
 </div>
-<p>EcoStretch is listed for cotton, poly-cotton, polyester and Lycra or spandex. A Siser reference chart prints 121°C beside the same 250°F, while the instruction sheet prints 120°C. EasyWeed Stretch is the one that also lists nylon, at a much hotter firm press. If a stretchy <a href="/fabrics/polyester/">polyester</a> shirt shines, try the EcoStretch row only when that is the film you have.</p>
+<p>EcoStretch is listed for cotton, poly-cotton, polyester and Lycra or spandex. A Siser reference chart prints 121°C beside the same 250°F, while the instruction sheet prints 120°C. EasyWeed Stretch is the one that also lists nylon, at a much hotter firm press. If a stretchy <a href="/fabrics/polyester/">polyester</a> shirt shines, try the EcoStretch row only when that is the film you have. Cotton jersey pyjamas are a reason to look at a stretch film. The chest placement is on the <a href="/pyjamas/htv/">pyjama HTV page</a>.</p>
 <h2>Metallic</h2>
 <div class="table-wrap">
 <table>
@@ -263,6 +266,7 @@ export const methodPages = [
       { href: "/fabrics/polyester/", label: "Polyester fabric" },
       { href: "/fabrics/poly-cotton/", label: "Why blends look pale" },
       { href: "/fabrics/cotton/", label: "Cotton will not sublimate" },
+      { href: "/pyjamas/sublimation/", label: "Cotton pyjamas" },
       { href: "/troubleshooting/sublimation-ghosting/", label: "Ghosting and blur" },
       { href: "/troubleshooting/faded-sublimation/", label: "Faded prints" },
       { href: "/methods/sublimation-mugs/", label: "Mugs" }
@@ -294,7 +298,7 @@ export const methodPages = [
 <p>Sawgrass call their chart a starting place and say the real result also depends on the blank, a calibrated press, colour management and practice. Their polo article prints 400°F (204°C) rather than 205°C, at high pressure rather than medium. Treat that as the same ballpark with a different pressure note, not as a third temperature you need to hit exactly.</p>
 <p>374°F next to the Xpres figure is our conversion. Xpres publish 190°C only. 400°F is what Sawgrass print; a straight conversion of 205°C is 401°F.</p>
 <h2>What will not sublimate</h2>
-<p><a href="/fabrics/cotton/">Cotton</a>, dark shirts and ordinary <a href="/fabrics/tote-bags/">canvas totes</a> are out. <a href="/fabrics/nylon/">Nylon</a> is not on these charts and it scorches at this heat. <a href="/fabrics/poly-cotton/">Poly-cotton</a> only takes dye in the polyester portion. For a full-colour design on cotton, use <a href="/methods/dtf/">DTF</a> or cut <a href="/methods/standard-htv/">HTV</a> instead.</p>
+<p><a href="/fabrics/cotton/">Cotton</a>, dark shirts and ordinary <a href="/fabrics/tote-bags/">canvas totes</a> are out. So are <a href="/pyjamas/sublimation/">100% cotton pyjamas</a>, including a white chest. <a href="/fabrics/nylon/">Nylon</a> is not on these charts and it scorches at this heat. <a href="/fabrics/poly-cotton/">Poly-cotton</a> only takes dye in the polyester portion. For a full-colour design on cotton, use <a href="/methods/dtf/">DTF</a> or cut <a href="/methods/standard-htv/">HTV</a> instead.</p>
 <p>If the image has a shadow or a double edge, that is <a href="/troubleshooting/sublimation-ghosting/">ghosting</a>: the paper moved, or the shirt shrank, while dye was still transferring. If the colour is weak, start with the <a href="/troubleshooting/faded-sublimation/">faded print</a> checks before you add time.</p>
 <p>Hard goods are a different table. <a href="/methods/sublimation-mugs/">Mugs</a> need a mug press and a much longer time. <a href="/methods/sublimation-hard-blanks/">MDF, metal, slate and acrylic</a> each have their own Sawgrass row.</p>
 `
@@ -419,6 +423,7 @@ export const methodPages = [
     ],
     related: [
       { href: "/fabrics/cotton/", label: "Cotton, where DTF earns its place" },
+      { href: "/pyjamas/sublimation/", label: "Cotton pyjamas" },
       { href: "/fabrics/polyester/", label: "Polyester" },
       { href: "/fabrics/tote-bags/", label: "Canvas totes" },
       { href: "/troubleshooting/vinyl-peeling/", label: "If the film lifts" },
@@ -452,7 +457,7 @@ export const methodPages = [
 <p>The cure and the shirt press are different heats. Do not cure powder at the shirt temperature just because both jobs use a heater. Under-cured powder feels grainy and lets go in the wash. That can look like a <a href="/troubleshooting/vinyl-peeling/">peeling</a> problem when the press was never the fault.</p>
 <h2>Where DTF fits</h2>
 <p>Choose DTF when the design is photographic or full colour and the shirt is <a href="/fabrics/cotton/">cotton</a>, <a href="/fabrics/poly-cotton/">poly-cotton</a> or <a href="/fabrics/polyester/">polyester</a>. <a href="/methods/sublimation-polyester/">Sublimation</a> is the better fabric dye on light polyester, and it cannot print cotton. Cut <a href="/methods/standard-htv/">HTV</a> is simpler for names and one-colour designs.</p>
-<p><a href="/fabrics/nylon/">Nylon</a> is not given a DTF time in the Xpres guides. Do not borrow the cotton row. <a href="/fabrics/childrens-clothing/">Children’s polyester</a> may scorch at 160°C; the cooler published example is the Garment Films FAQ range, and it still needs a seam test. Keep poppers and zips off the platen.</p>
+<p><a href="/fabrics/nylon/">Nylon</a> is not given a DTF time in the Xpres guides. Do not borrow the cotton row. <a href="/fabrics/childrens-clothing/">Children’s polyester</a> may scorch at 160°C; the cooler published example is the Garment Films FAQ range, and it still needs a seam test. Keep poppers and zips off the platen. Cotton pyjamas are a DTF job rather than a sublimation job: see <a href="/pyjamas/sublimation/">can you sublimate cotton pyjamas?</a></p>
 <p>Xpres also say room temperature, humidity, design size and ink load all change the result. A setting that worked in a dry room can shift on a damp British afternoon. Pre-press, and test the first shirt of the day.</p>
 `
   }

@@ -20,7 +20,8 @@ export const fabricPages = [
     related: [
       { href: "/methods/standard-htv/", label: "Standard HTV settings" },
       { href: "/methods/dtf/", label: "DTF on cotton" },
-      { href: "/methods/glitter-htv/", label: "Glitter on cotton" },
+      { href: "/pyjamas/htv/", label: "HTV on kids' pyjamas" },
+      { href: "/pyjamas/sublimation/", label: "Why cotton pyjamas will not sublimate" },
       { href: "/fabrics/childrens-clothing/", label: "Children’s cotton clothes" },
       { href: "/troubleshooting/vinyl-peeling/", label: "If the design lifts" }
     ],
@@ -37,7 +38,7 @@ export const fabricPages = [
   <p><a href="https://www.amazon.co.uk/s?me=A1SAX4Y8C46TBJ&amp;marketplaceID=A1F83G8C2ARO7P">Cotton And Twigg blank kids' pyjamas</a></p>
   <p>This is a plain shop link, not an affiliate link. Nothing is added to the address to track a commission.</p>
 </aside>
-<p>Kids’ cotton vests and pyjamas are still cotton, with extra care around prints, poppers and nightwear rules. That sits on the <a href="/fabrics/childrens-clothing/">children’s clothing</a> page. Thick cotton canvas is on the <a href="/fabrics/tote-bags/">tote bag</a> page.</p>
+<p>Kids’ cotton vests and pyjamas are still cotton, with extra care around prints, poppers and nightwear rules. That sits on the <a href="/fabrics/childrens-clothing/">children’s clothing</a> page. For blank pyjama sets, see <a href="/pyjamas/htv/">HTV on the white chest</a>, <a href="/pyjamas/embroidery/">embroidery</a> and <a href="/pyjamas/sublimation/">why these cotton sets will not sublimate</a>. Thick cotton canvas is on the <a href="/fabrics/tote-bags/">tote bag</a> page.</p>
 `
   },
   {
@@ -185,10 +186,11 @@ export const fabricPages = [
     ],
     related: [
       { href: "/fabrics/cotton/", label: "Cotton" },
-      { href: "/fabrics/polyester/", label: "Polyester" },
+      { href: "/pyjamas/htv/", label: "HTV on kids' pyjamas" },
+      { href: "/pyjamas/embroidery/", label: "Embroidery on pyjamas" },
+      { href: "/pyjamas/size-guide/", label: "Pyjama size guide" },
       { href: "/methods/standard-htv/", label: "Everyday HTV" },
-      { href: "/troubleshooting/scorch-marks/", label: "Scorch marks" },
-      { href: "/methods/dtf/", label: "DTF" }
+      { href: "/troubleshooting/scorch-marks/", label: "Scorch marks" }
     ],
     faqs: [
       { q: "Can I put glitter on pyjamas?", a: "The glitter charts on this site start at 160°C. That is a poor first test on polyester nightwear. These sources do not publish a children’s glitter temperature. Test a seam only if you are willing to scrap the top." },
@@ -196,6 +198,7 @@ export const fabricPages = [
     ],
     body: `
 <p>Read the fibre and the care label first. A cotton school T-shirt can use the <a href="/fabrics/cotton/">cotton</a> HTV row when the label allows a hot press. A polyester football shirt or a printed pyjama top often will not.</p>
+<p>Blank kids’ pyjamas in 100% cotton, about 200 gsm, have their own notes: <a href="/pyjamas/htv/">HTV on the chest</a>, <a href="/pyjamas/embroidery/">embroidery</a>, <a href="/pyjamas/sublimation/">sublimation (it will not bond)</a>, <a href="/pyjamas/christmas/">Christmas sets</a> and a <a href="/pyjamas/size-guide/">size guide</a> from 6–12 months to 5–6 years. At about 200 gsm, HI-5’s heavier row is the 150°C press in the table below, not the 120°C line.</p>
 <div class="table-wrap">
 <table>
   <caption>Lower-temperature films with a published sensitive-fabric or babywear note</caption>

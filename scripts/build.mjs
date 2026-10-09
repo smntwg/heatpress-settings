@@ -39,6 +39,16 @@ const nav = [
     ]
   },
   {
+    label: "Pyjamas",
+    links: [
+      ["HTV on pyjamas", "/pyjamas/htv/"],
+      ["Embroidery", "/pyjamas/embroidery/"],
+      ["Sublimation on cotton pyjamas", "/pyjamas/sublimation/"],
+      ["Christmas pyjamas", "/pyjamas/christmas/"],
+      ["Size guide", "/pyjamas/size-guide/"]
+    ]
+  },
+  {
     label: "Fixes",
     links: [
       ["Vinyl peeling or lifting", "/troubleshooting/vinyl-peeling/"],
@@ -108,7 +118,7 @@ function header(here) {
 }
 
 function footer() {
-  const cols = nav.slice(0, 3).map((group) => {
+  const cols = nav.filter((group) => group.label !== "Tools").map((group) => {
     const items = group.links.map(([label, href]) => `<li><a href="${href}">${esc(label)}</a></li>`).join("");
     return `<div><h2>${esc(group.label)}</h2><ul>${items}</ul></div>`;
   }).join("");
@@ -197,7 +207,7 @@ function graphFor(page, canonical) {
       description: page.description,
       inLanguage: "en-GB",
       totalTime: page.totalTime || "PT2M",
-      tool: [{ "@type": "HowToTool", name: "Heat press" }],
+      tool: (page.tools || ["Heat press"]).map((name) => ({ "@type": "HowToTool", name })),
       step: (page.steps || []).map((step, index) => ({
         "@type": "HowToStep",
         position: index + 1,
@@ -255,7 +265,7 @@ function graphFor(page, canonical) {
       url: canonical,
       description: page.description,
       inLanguage: "en-GB",
-      dateModified: "2026-10-07"
+      dateModified: page.modified || "2026-10-07"
     });
   }
   return { "@context": "https://schema.org", "@graph": graph };
@@ -303,6 +313,7 @@ function documentHtml(page) {
         ${stepsHtml(page.steps)}
         ${faqHtml(page.faqs)}
         ${sources(page.sources)}
+        ${page.closing || ""}
       </div>
       ${related(page.related)}
       ${page.ad === false ? "" : adSlot()}
@@ -422,6 +433,16 @@ ${adSlot()}
   <ul>${fixLinks}</ul>
 </section>
 <section class="section">
+  <h2>Kids' pyjamas</h2>
+  <div class="grid guides">${[
+    ["/pyjamas/htv/", "HTV on pyjamas", "Chest placement on a cotton raglan, plus the film charts that already list cotton."],
+    ["/pyjamas/embroidery/", "Embroidery", "Stabiliser and hooping for about 200 gsm cotton jersey, and how to avoid puckering."],
+    ["/pyjamas/sublimation/", "Can you sublimate them?", "These sets are 100% cotton, so sublimation dye will not bond. HTV and DTF will."],
+    ["/pyjamas/christmas/", "Christmas pyjamas", "Names, slogans, and which colours suit a Christmas Eve box."],
+    ["/pyjamas/size-guide/", "Size guide", "Flat measurements from 6–12 months to 5–6 years, plus a separate baby chart."]
+  ].map(([href, title, text]) => `<a class="guide-card" href="${href}"><h3>${esc(title)}</h3><p>${esc(text)}</p></a>`).join("")}</div>
+</section>
+<section class="section">
   <h2>Tools</h2>
   <div class="grid tools">
     <a class="tool-card" href="/tools/temperature-converter/"><h3>°C to °F converter</h3><p>Including the temperatures these charts actually use.</p></a>
@@ -450,6 +471,8 @@ function notFound() {
   <li><a href="/methods/standard-htv/">Standard HTV</a></li>
   <li><a href="/methods/sublimation-polyester/">Sublimation on polyester</a></li>
   <li><a href="/methods/dtf/">DTF transfers</a></li>
+  <li><a href="/pyjamas/htv/">HTV on kids' pyjamas</a></li>
+  <li><a href="/pyjamas/size-guide/">Pyjama size guide</a></li>
   <li><a href="/tools/temperature-converter/">Temperature converter</a></li>
 </ul>`,
     related: []
@@ -474,7 +497,7 @@ write("404.html", notFound());
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((url) => `  <url><loc>${url}</loc><lastmod>2026-10-07</lastmod></url>`).join("\n")}
+${urls.map((url) => `  <url><loc>${url}</loc><lastmod>2026-10-09</lastmod></url>`).join("\n")}
 </urlset>
 `;
 fs.writeFileSync(path.join(root, "sitemap.xml"), sitemap);
