@@ -42,7 +42,7 @@ function card(product) {
   return `<li class="blank-card"><img src="/img/blanks/${product.asin}.webp" width="${photo.w}" height="${photo.h}" alt="${esc(photo.alt)}" loading="lazy" decoding="async"><h3>${esc(product.title)}</h3><p>${esc(product.line)}</p><a class="btn" href="${href}" rel="noopener noreferrer">View on Amazon</a></li>`;
 }
 
-function grid(products, wide) {
+export function grid(products, wide) {
   return `<ul class="blank-grid${wide ? " wide" : ""}">${products.map(card).join("")}</ul>`;
 }
 
