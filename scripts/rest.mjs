@@ -24,7 +24,8 @@ export const restPages = [
       { href: "/methods/standard-htv/", label: "Standard HTV" },
       { href: "/methods/flock-htv/", label: "Flock peels warm or cool" },
       { href: "/methods/dtf/", label: "DTF peel and cure" },
-      { href: "/fabrics/nylon/", label: "Nylon that was never on the chart" }
+      { href: "/fabrics/nylon/", label: "Nylon that was never on the chart" },
+      { href: "/pyjamas/htv/", label: "HTV on cotton pyjamas" }
     ],
     faqs: [
       { q: "Can I iron it back on?", a: "Siser’s published rescue is a cover sheet and another 5–10 seconds on the press, for areas that lift after application. A sliding iron is a poor substitute. If the carrier was peeled at the wrong moment, a second press may not put the pile or the glitter back." },
@@ -42,7 +43,7 @@ export const restPages = [
   <li><strong>Was it washed too soon, or with conditioner?</strong> Wait 24 hours. Wash inside out. Skip fabric conditioner. Siser also say to skip bleach.</li>
 </ol>
 <p>The dial is the last check, not the first. If a trusted chart suddenly fails on a press that used to work, the platen may not be at the temperature on the screen. Siser’s EasyWeed sheet tells EasyPress users to add about 30°, written beside 305°F/150°C and read as 30°F rather than 30°C. Other machines need a scrap, not a guessed offset.</p>
-<p>If the fabric itself has gone shiny, that is <a href="/troubleshooting/scorch-marks/">scorch</a>. More time will make it worse.</p>
+<p>If the fabric itself has gone shiny, that is <a href="/troubleshooting/scorch-marks/">scorch</a>. More time will make it worse. Cotton pyjamas use the same film rules. Placement on the chest is on the <a href="/pyjamas/htv/">pyjama HTV page</a>.</p>
 `
   },
   {
@@ -144,7 +145,8 @@ export const restPages = [
       { href: "/fabrics/poly-cotton/", label: "Blends look pale on purpose" },
       { href: "/methods/sublimation-mugs/", label: "Mug times" },
       { href: "/methods/sublimation-hard-blanks/", label: "Slate needs minutes" },
-      { href: "/troubleshooting/sublimation-ghosting/", label: "Ghosting" }
+      { href: "/troubleshooting/sublimation-ghosting/", label: "Ghosting" },
+      { href: "/pyjamas/sublimation/", label: "Cotton pyjamas will not sublimate" }
     ],
     faqs: [
       { q: "The paper looks brighter than the shirt. Is the press too cool?", a: "Check the paper the other way round first. Xpres say the ink often looks duller on the paper and brighter after it is heated. Judge a pressed test, not the printout. If the pressed shirt is still pale, then look at time, temperature and fibre." },
@@ -318,10 +320,11 @@ export const restPages = [
   {
     path: "/privacy/",
     title: "Privacy policy, cookies and affiliate disclosure",
-    description: "UK GDPR privacy notice for heatpress-settings.co.uk: what the site collects, cookies, advertising and the Cotton And Twigg shop link.",
+    description: "UK GDPR privacy notice for heatpress-settings.co.uk: what the site collects, cookies, advertising and links to individual Amazon UK product listings.",
     kicker: "Privacy",
     h1: "Privacy policy",
-    lede: "This notice explains what heatpress-settings.co.uk does with personal information. It was updated on 7 October 2026.",
+    lede: "This notice explains what heatpress-settings.co.uk does with personal information. It was updated on 9 October 2026.",
+    modified: "2026-10-09",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/privacy/", label: "Privacy" }
@@ -342,7 +345,7 @@ export const restPages = [
 <p>This version of the site does not set its own cookies. It does not load analytics, and it does not load advertising scripts. If that changes, this policy will be updated first, and any non-essential cookies will wait for a proper choice under the Privacy and Electronic Communications Regulations and UK GDPR.</p>
 <h2>Advertising and affiliate links</h2>
 <p>You may see a marked box that says the space is reserved for a future advert. Nothing is loaded in that box. There is no AdSense code and no ads.txt file yet.</p>
-<p>The children’s clothing page and the cotton page link to Cotton And Twigg blank kids’ pyjamas on Amazon. The address is a plain seller search: it is not an affiliate link, and we are not paid for clicks on it at the time of this notice. If we later add affiliate links or adverts, they will be labelled as such before they go live.</p>
+<p>The cotton page and the children’s clothing page link to the pyjama size guide. The pyjama guides link to individual Amazon UK product listings. Those addresses are plain Amazon links, with nothing added to track a commission. If we later add affiliate links or adverts, they will be labelled as such before they go live.</p>
 <h2>How long we keep email</h2>
 <p>We keep correspondence for as long as we need it to handle your question and any follow-up, and then delete it. Hosting logs are kept on the host’s schedule, not ours.</p>
 <h2>Your rights</h2>

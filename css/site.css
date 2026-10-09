@@ -164,7 +164,7 @@ a:hover { color: var(--copper); }
     right: 0;
     top: 100%;
     background: #245049;
-    min-width: 16.5rem;
+    min-width: 18.5rem;
     padding: 0.45rem 0.85rem 0.6rem;
     z-index: 6;
     box-shadow: var(--shadow);
@@ -450,6 +450,76 @@ ol.steps, .prose ol, .prose ul { padding-left: 1.2rem; }
 
 .blanks h2 { margin: 0 0 0.35rem; font-size: 1.25rem; }
 .blanks p { margin: 0.3rem 0; }
+.blanks .blank-group {
+  margin: 1.05rem 0 0.35rem;
+  font-size: 1.05rem;
+}
+.blank-grid {
+  display: grid;
+  gap: 0.75rem;
+  list-style: none;
+  margin: 0.45rem 0 0;
+  padding: 0;
+}
+@media (min-width: 700px) {
+  .blank-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (min-width: 1000px) {
+  .blank-grid.wide { grid-template-columns: 1fr 1fr 1fr; }
+}
+.blank-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 0 0 0.95rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  min-width: 0;
+  overflow: hidden;
+}
+.blank-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fff;
+}
+.blank-card h3 {
+  margin: 0.15rem 0.9rem 0;
+  font-size: 1.05rem;
+}
+.blank-card p {
+  margin: 0 0.9rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+a.btn {
+  align-self: flex-start;
+  display: inline-block;
+  margin: auto 0.9rem 0;
+  color: #f6f1e8;
+  text-decoration: none;
+}
+a.btn:hover { color: #fff; background: var(--pine-2); }
+.guidance {
+  background: var(--sand);
+  border-left: 4px solid var(--pine);
+  padding: 0.15rem 1rem 0.85rem;
+  margin: 1rem 0;
+}
+.guidance h2 { margin-top: 0.85rem; font-size: 1.35rem; }
+.measure-fig {
+  margin: 0.8rem 0 1rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 0.5rem 0.5rem 0.7rem;
+}
+.measure-fig img { display: block; width: 100%; height: auto; }
+.measure-fig figcaption {
+  margin: 0.45rem 0.35rem 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+table.compact { min-width: 0; }
 
 .ad-slot {
   margin: 1rem 0;
@@ -563,7 +633,10 @@ ol.steps, .prose ol, .prose ul { padding-left: 1.2rem; }
 }
 
 @media (min-width: 800px) {
-  .footer-grid { grid-template-columns: 1.4fr repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; }
+}
+@media (min-width: 1100px) {
+  .footer-grid { grid-template-columns: 1.2fr repeat(4, 1fr); }
 }
 
 .site-footer h2 {
