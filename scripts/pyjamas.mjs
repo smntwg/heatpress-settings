@@ -62,7 +62,7 @@ function grouped(products) {
 function blanks(inner) {
   return `<aside class="blanks">
   <h2>Blanks we use</h2>
-  <p>Cotton And Twigg is our own brand of blanks. These are plain Amazon links, with no affiliate tag.</p>
+  <p>These are the blank sets these guides are written around. Each link opens the Amazon UK listing; pick your size there.</p>
   ${inner}
 </aside>`;
 }
