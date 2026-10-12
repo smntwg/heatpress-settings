@@ -1,15 +1,6 @@
-import { grid } from "./pyjamas.mjs";
+import { blankMention } from "./pyjamas.mjs";
 
-const likedBlanks = `<aside class="blanks">
-  <h2>Blanks we like</h2>
-  ${grid([
-    { asin: "B0C24KD4J6", title: "Blue & White Blank Pyjamas", line: "White top, blue sleeves and bottoms." },
-    { asin: "B0C28TCKL6", title: "Pink & White Blank Pyjamas", line: "White top, pink sleeves and bottoms." },
-    { asin: "B0BTZ7T4RJ", title: "Blank Dinosaur Pyjamas", line: "White top, dinosaur print on the sleeves and bottoms." },
-    { asin: "B0BWK4XZRT", title: "Unicorn Blank Pyjamas", line: "White top, unicorn print on the sleeves and bottoms." }
-  ])}
-  <p><a href="/pyjamas/size-guide/">More colours and sizes in the size guide</a></p>
-</aside>`;
+const likedBlanks = blankMention("For a kids’ set, we press onto ", "plain 100% cotton pyjamas like these", ".");
 
 export const fabricPages = [
   {

@@ -99,7 +99,7 @@ function header(here) {
       <svg class="mark" viewBox="0 0 48 48" aria-hidden="true">
         <rect x="6" y="7" width="36" height="13" rx="1.5" fill="currentColor"></rect>
         <rect x="9" y="27" width="30" height="12" rx="1" fill="none" stroke="currentColor" stroke-width="2.4"></rect>
-        <path d="M16 20v7M24 20v7M32 20v7" stroke="#1b3a34" stroke-width="2"></path>
+        <path d="M16 20v7M24 20v7M32 20v7" stroke="#242220" stroke-width="2"></path>
       </svg>
       <span>
         <span class="brand-name">Heat press settings</span>
@@ -292,7 +292,7 @@ function documentHtml(page) {
   <meta property="og:locale" content="en_GB">
   <meta property="og:site_name" content="Heat press settings">
   <meta name="twitter:card" content="summary">
-  <meta name="theme-color" content="#1b3a34">
+  <meta name="theme-color" content="#242220">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="/css/site.css">
   ${jsonLd(graphFor(page, canonical))}
