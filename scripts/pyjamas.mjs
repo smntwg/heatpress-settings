@@ -7,93 +7,27 @@ function esc(value) {
 }
 
 const photos = {
-  B0C24KD4J6: { w: 600, h: 803, alt: "Blue and white kids pyjamas with white top" },
-  B0BSR58NC9: { w: 600, h: 799, alt: "Blue stripe kids pyjamas with white top" },
-  B0BRT24PH2: { w: 600, h: 1035, alt: "Blue cloud print kids pyjamas with white top" },
-  B0BT21ML1J: { w: 600, h: 1016, alt: "Blue stars kids pyjamas with white top" },
-  B0C28TCKL6: { w: 600, h: 801, alt: "Pink and white kids pyjamas with white top" },
-  B0BXB676WT: { w: 600, h: 801, alt: "Pink stripe kids pyjamas with white top" },
-  B0BRY4S423: { w: 600, h: 1016, alt: "Pink cloud print kids pyjamas with white top" },
-  B0BXB21ZZ3: { w: 600, h: 1005, alt: "Pink stars kids pyjamas with white top" },
-  B0GMRKRZ7K: { w: 600, h: 1026, alt: "Sage and white kids pyjamas with white top" },
-  B0F88C6VRC: { w: 600, h: 1012, alt: "Pastel sage stripe kids pyjamas with white top" },
-  B0GYSQPXHR: { w: 600, h: 923, alt: "Red stripe kids pyjamas with white top" },
-  B0GMRFXVZX: { w: 600, h: 1009, alt: "Mink and white kids pyjamas with white top" },
-  B0GYSLPRQN: { w: 600, h: 1011, alt: "Natural stripe kids pyjamas with white top" },
-  B0GMQZY2WZ: { w: 600, h: 1011, alt: "Pastel purple and white kids pyjamas with white top" },
-  B0FCSH6JLZ: { w: 600, h: 1015, alt: "Pastel purple stripe kids pyjamas with white top" },
-  B0BTZ7T4RJ: { w: 600, h: 991, alt: "Blank dinosaur kids pyjamas with white top" },
-  B0GWJNXWLG: { w: 600, h: 1028, alt: "Digger print kids pyjamas with white top" },
-  B0BWK4XZRT: { w: 600, h: 1062, alt: "Unicorn kids pyjamas with white top" },
-  B0GWJKDQGJ: { w: 600, h: 1025, alt: "Fairy princess kids pyjamas with white top" },
-  B0C1949NZT: { w: 600, h: 1043, alt: "Heart print kids pyjamas with white top" },
-  B0BSC9D8DG: { w: 600, h: 1015, alt: "Ballerina kids pyjamas with white top" },
-  B0GWJD7YT7: { w: 600, h: 1012, alt: "Teddy bear kids pyjamas with white top" },
-  B0FQPF13NZ: { w: 600, h: 1004, alt: "Bunny print kids pyjamas with white top" },
-  B0CHK512ZJ: { w: 600, h: 965, alt: "White blank baby pyjamas" },
-  B0GH2368W1: { w: 600, h: 954, alt: "Light blue blank baby pyjamas" },
-  B0GH2MG9X5: { w: 600, h: 966, alt: "Pink blank baby pyjamas" }
+  B0C24KD4J6: { w: 600, h: 803, alt: "Blue and white kids pyjamas with a plain white top" },
+  B0C28TCKL6: { w: 600, h: 801, alt: "Pink and white kids pyjamas with a plain white top" }
 };
 
-function card(product) {
-  const photo = photos[product.asin];
-  if (!photo) throw new Error(`No photo for ${product.asin}`);
-  const href = `https://www.amazon.co.uk/dp/${product.asin}`;
-  return `<li class="blank-card"><img src="/img/blanks/${product.asin}.webp" width="${photo.w}" height="${photo.h}" alt="${esc(photo.alt)}" loading="lazy" decoding="async"><h3>${esc(product.title)}</h3><p>${esc(product.line)}</p><a class="btn" href="${href}" rel="noopener noreferrer">View on Amazon</a></li>`;
+const exampleShots = ["B0C24KD4J6", "B0C28TCKL6"];
+const exampleHref = "https://www.amazon.co.uk/dp/B0C24KD4J6";
+
+function shots() {
+  return exampleShots.map((asin) => {
+    const photo = photos[asin];
+    if (!photo) throw new Error(`No photo for ${asin}`);
+    return `<img src="/img/blanks/${asin}.webp" width="${photo.w}" height="${photo.h}" alt="${esc(photo.alt)}" loading="lazy" decoding="async">`;
+  }).join("");
 }
 
-export function grid(products, wide) {
-  return `<ul class="blank-grid${wide ? " wide" : ""}">${products.map(card).join("")}</ul>`;
-}
-
-function grouped(products) {
-  const groups = [];
-  for (const product of products) {
-    let group = groups.find((item) => item.name === product.group);
-    if (!group) {
-      group = { name: product.group, items: [] };
-      groups.push(group);
-    }
-    group.items.push(product);
-  }
-  return groups.map((group) => `<h3 class="blank-group">${esc(group.name)}</h3>${grid(group.items, true)}`).join("");
-}
-
-function blanks(inner) {
-  return `<aside class="blanks">
-  <h2>Blanks we use</h2>
-  <p>These are the blank sets these guides are written around. Each link opens the Amazon UK listing; pick your size there.</p>
-  ${inner}
+export function blankMention(before, linkText, after = "") {
+  return `<aside class="blank-note">
+  <div class="blank-shots">${shots()}</div>
+  <p>${esc(before)}<a href="${exampleHref}" rel="noopener noreferrer">${esc(linkText)}</a>${esc(after)}</p>
 </aside>`;
 }
-
-const plain = [
-  {
-    asin: "B0C24KD4J6",
-    title: "Blue & White Blank Pyjamas",
-    line: "White top, blue sleeves and bottoms."
-  },
-  {
-    asin: "B0C28TCKL6",
-    title: "Pink & White Blank Pyjamas",
-    line: "White top, pink sleeves and bottoms."
-  },
-  {
-    asin: "B0GMRKRZ7K",
-    title: "Sage & White Blank Pyjamas",
-    line: "White top, sage sleeves and bottoms."
-  },
-  {
-    asin: "B0GMRFXVZX",
-    title: "Mink & White Blank Pyjamas",
-    line: "White top, mink sleeves and bottoms."
-  },
-  {
-    asin: "B0GMQZY2WZ",
-    title: "Pastel Purple & White Blank Pyjamas",
-    line: "White top, pastel purple sleeves and bottoms."
-  }
-];
 
 const kidsMeasure = [
   { chart: "6/12mths", age: "6–12 months", a: "26.5", b: "35", c: "21", d: "29", e: "41", design: "8–10 cm" },
@@ -141,92 +75,6 @@ function measureFigure() {
   <figcaption>Where the letters sit. The drawing is not to scale. Use the centimetres in the table, and remember they are flat measurements, not the distance around the body.</figcaption>
 </figure>`;
 }
-
-const kidsCatalogue = [
-  { group: "Blue", asin: "B0C24KD4J6", title: "Blue & White Blank Pyjamas", line: "White top, blue sleeves and bottoms." },
-  { group: "Blue", asin: "B0BSR58NC9", title: "Blue Stripe Blank Pyjamas", line: "White top, blue stripe on the sleeves and bottoms." },
-  { group: "Blue", asin: "B0BRT24PH2", title: "Blue Cloud Blank Pyjamas", line: "White top, cloud print on the sleeves and bottoms." },
-  { group: "Blue", asin: "B0BT21ML1J", title: "Blue Stars Blank Pyjamas", line: "White top, stars print on the sleeves and bottoms." },
-  { group: "Pink", asin: "B0C28TCKL6", title: "Pink & White Blank Pyjamas", line: "White top, pink sleeves and bottoms." },
-  { group: "Pink", asin: "B0BXB676WT", title: "Pink Stripe Blank Pyjamas", line: "White top, pink stripe on the sleeves and bottoms." },
-  { group: "Pink", asin: "B0BRY4S423", title: "Pink Cloud Blank Pyjamas", line: "White top, cloud print on the sleeves and bottoms." },
-  { group: "Pink", asin: "B0BXB21ZZ3", title: "Pink Stars Blank Pyjamas", line: "White top, stars print on the sleeves and bottoms." },
-  { group: "Sage", asin: "B0GMRKRZ7K", title: "Sage & White Blank Pyjamas", line: "White top, sage sleeves and bottoms." },
-  { group: "Sage", asin: "B0F88C6VRC", title: "Pastel Sage Stripe Blank Pyjamas", line: "White top, pastel sage stripe on the sleeves and bottoms." },
-  { group: "Red", asin: "B0GYSQPXHR", title: "Red Stripe Blank Pyjamas", line: "White top, red stripe on the sleeves and bottoms." },
-  { group: "Neutrals", asin: "B0GMRFXVZX", title: "Mink & White Blank Pyjamas", line: "White top, mink sleeves and bottoms." },
-  { group: "Neutrals", asin: "B0GYSLPRQN", title: "Natural Stripe Blank Pyjamas", line: "White top, natural stripe on the sleeves and bottoms." },
-  { group: "Purple", asin: "B0GMQZY2WZ", title: "Pastel Purple & White Blank Pyjamas", line: "White top, pastel purple sleeves and bottoms." },
-  { group: "Purple", asin: "B0FCSH6JLZ", title: "Pastel Purple Stripe Blank Pyjamas", line: "White top, pastel purple stripe on the sleeves and bottoms." },
-  { group: "Prints", asin: "B0BTZ7T4RJ", title: "Blank Dinosaur Pyjamas", line: "White top, dinosaur print on the sleeves and bottoms." },
-  { group: "Prints", asin: "B0GWJNXWLG", title: "Digger Print Blank Pyjamas", line: "White top, digger print on the sleeves and bottoms." },
-  { group: "Prints", asin: "B0BWK4XZRT", title: "Unicorn Blank Pyjamas", line: "White top, unicorn print on the sleeves and bottoms." },
-  { group: "Prints", asin: "B0GWJKDQGJ", title: "Blank Fairy Princess Pyjamas", line: "White top, fairy print on the sleeves and bottoms." },
-  { group: "Prints", asin: "B0C1949NZT", title: "Heart Print Blank Pyjamas", line: "White top, heart print on the sleeves and bottoms." },
-  { group: "Prints", asin: "B0BSC9D8DG", title: "Ballerina Blank Pyjamas", line: "White top, ballerina print on the sleeves and bottoms." },
-  { group: "Prints", asin: "B0GWJD7YT7", title: "Teddy Bear Blank Pyjamas", line: "White top, teddy print on the sleeves and bottoms." },
-  { group: "Prints", asin: "B0FQPF13NZ", title: "Bunny Print Blank Pyjamas", line: "White top, bunny print on the sleeves and bottoms." }
-];
-
-const babyProducts = [
-  {
-    asin: "B0CHK512ZJ",
-    title: "White Blank Baby Pyjamas",
-    line: "Long-sleeve baby set in white. 100% cotton, from 0–3 months to 1–2 years."
-  },
-  {
-    asin: "B0GH2368W1",
-    title: "Light Blue Blank Baby Pyjamas",
-    line: "Long-sleeve baby set in light blue. 100% cotton, from 0–3 months to 1–2 years."
-  },
-  {
-    asin: "B0GH2MG9X5",
-    title: "Pink Blank Baby Pyjamas",
-    line: "Long-sleeve baby set in pink. 100% cotton, from 0–3 months to 1–2 years."
-  }
-];
-
-const christmasProducts = [
-  {
-    asin: "B0GYSQPXHR",
-    title: "Red Stripe Blank Pyjamas",
-    line: "White top, red stripe on the sleeves and bottoms."
-  },
-  {
-    asin: "B0C1949NZT",
-    title: "Heart Print Blank Pyjamas",
-    line: "White top, heart print on the sleeves and bottoms."
-  },
-  {
-    asin: "B0GWJD7YT7",
-    title: "Teddy Bear Blank Pyjamas",
-    line: "White top, teddy print on the sleeves and bottoms."
-  },
-  {
-    asin: "B0FQPF13NZ",
-    title: "Bunny Print Blank Pyjamas",
-    line: "White top, bunny print on the sleeves and bottoms."
-  }
-];
-
-const sublimationProducts = [
-  plain[0],
-  {
-    asin: "B0BSR58NC9",
-    title: "Blue Stripe Blank Pyjamas",
-    line: "White top, blue stripe on the sleeves and bottoms. The chest is still cotton."
-  },
-  {
-    asin: "B0BWK4XZRT",
-    title: "Unicorn Blank Pyjamas",
-    line: "White top, unicorn print on the sleeves and bottoms. The chest is still cotton."
-  },
-  {
-    asin: "B0BRY4S423",
-    title: "Pink Cloud Blank Pyjamas",
-    line: "White top, cloud print on the sleeves and bottoms. The chest is still cotton."
-  }
-];
 
 const sharedFacts = "The kids’ sets are 100% cotton, about 200 gsm, with a long raglan sleeve. The top body is white. The sleeves and bottoms are coloured, striped or printed. There is no brand label in the neck.";
 
@@ -312,7 +160,7 @@ ${designTable()}
 <p>After peeling, leave the top for 24 hours before it is washed. Wash inside out. Skip fabric conditioner. Siser also say to skip bleach. These film notes do not print a wash temperature for the pyjamas, so follow the care label in the garment. A hot tumble on the day you pressed is a different test from the one they published. If an edge lifts later, the checks are on the <a href="/troubleshooting/vinyl-peeling/">peeling page</a>.</p>
 <p>If you sell children’s nightwear in the UK, a name on the chest does not remove the labelling rules. The <a href="/fabrics/childrens-clothing/">children’s clothing page</a> points at the trading-standards summary. This site is not legal advice.</p>
 `,
-  closing: blanks(`<p>Plain colour-and-white sets. The white chest is the pressing area. The same cotton applies to the stripes and prints on the <a href="/pyjamas/size-guide/">size guide</a>.</p>${grid(plain)}`)
+  closing: blankMention("We press onto ", "plain 100% cotton pyjamas like these", ". The white chest is the part that takes the film.")
 };
 
 const embroideryPage = {
@@ -371,7 +219,7 @@ ${designTable()}
 <p>For embroidery, treat the right-hand column as a ceiling. A filled motif should be smaller than a name in satin stitch at the same age. Baby sets use a different garment and a shorter list of widths, on the <a href="/pyjamas/size-guide/">size guide</a>. The same stabiliser advice applies. The hoop just gets smaller.</p>
 <p>If you would rather press a name than stitch it, the cotton film charts and the chest placement are on the <a href="/pyjamas/htv/">HTV page</a>. Heat from an iron is a different job from those charts. Do not slide a hot iron across finished embroidery. If the top needs flattening, press from the back with a cloth after the stitches have cooled, and follow the care label. These pages do not print an iron temperature for that.</p>
 `,
-  closing: blanks(`<p>Colour-and-white sets. Embroidery wants the plain white chest, with the colour kept to the sleeves and bottoms.</p>${grid(plain)}`)
+  closing: blankMention("We stitch a name onto the white chest of ", "plain 100% cotton pyjamas like these", ".")
 };
 
 const sublimationPage = {
@@ -423,7 +271,7 @@ const sublimationPage = {
 <p>That is a vinyl-on-polyester problem. These pyjamas are cotton, so dye migration from the garment is not the problem you have. This site does not give a method for sublimating onto Sub Block, and pressing sublimation paper onto the cotton, with or without a layer of Sub Block underneath, is not a workaround the Sub Block page describes.</p>
 <p>Christmas wording and which blank suits a seasonal set are on the <a href="/pyjamas/christmas/">Christmas pyjama page</a>. None of that is a sublimation job on these tops.</p>
 `,
-  closing: blanks(`<p>Plain, stripe and print. Each of these has a white cotton chest. Sublimation does not bond to it. HTV and DTF can.</p>${grid(sublimationProducts)}`)
+  closing: blankMention("Sublimation will not bond to ", "plain 100% cotton pyjamas like these", ". HTV and DTF can.")
 };
 
 const christmasPage = {
@@ -449,7 +297,7 @@ const christmasPage = {
     { q: "When should I wash them before wrapping?", a: "The film charts say wait 24 hours after pressing, then wash inside out without fabric conditioner if you want them washed before they are worn. Build that day into the plan. A top pressed on Christmas Eve is not ready for a hot wash that night." }
   ],
   body: `
-<p>${sharedFacts} The kids’ sets linked here run from 6–12 months to 5–6 years. Check the <a href="/pyjamas/size-guide/">size guide</a> before you guess from age. Baby sets are a separate, smaller range.</p>
+<p>${sharedFacts} The kids’ sets these notes are written for run from 6–12 months to 5–6 years. Check the <a href="/pyjamas/size-guide/">size guide</a> before you guess from age. Baby sets are a separate, smaller range.</p>
 <h2>Christmas Eve boxes</h2>
 <p>Pyjamas earn their place in a Christmas Eve box because they are the thing a child puts on that night. A first name on the chest is enough. Around them, people often tuck a book, a sachet of hot chocolate, and a small toy or decoration. The box does not need a theme for every item. One personalised pair carries it.</p>
 <p>Order earlier than the week of Christmas. A size that is easy to find in October is the size other people are also packing. Personalising takes a press or a stitch-out, and vinyl then wants 24 hours before a first wash. Leave yourself that day, plus a spare top if you are trying a film you have not used on jersey before.</p>
@@ -459,11 +307,11 @@ const christmasPage = {
 <p>A stitched name feels quieter on nightwear. Stabiliser and hoop notes are on the <a href="/pyjamas/embroidery/">embroidery page</a>. A full-colour scene, a character you have drawn, a photo, is <a href="/methods/dtf/">DTF</a>, not sublimation. These sets are cotton. The honest version of that question is on the <a href="/pyjamas/sublimation/">sublimation page</a>.</p>
 <h2>Colours and patterns</h2>
 <p>Red stripe is the Christmas classic in this range: a white chest, with a red stripe on the sleeves and bottoms. It is a stripe, not a solid red suit. A name in green, cream or white stays readable on the white body. Red vinyl can disappear at a glance once the eye hits the red sleeve, so keep the film on the chest and off the stripe.</p>
-<p>Heart, teddy and bunny prints are the softer sets. The pattern stays on the sleeves and bottoms. The chest is still plain white, which is what you want if the name is doing the seasonal work. Stars, unicorns, clouds and the fairy print are the same idea. They are grouped on the <a href="/pyjamas/size-guide/">size guide</a> if red feels too loud for the child.</p>
+<p>Heart, teddy and bunny prints are the softer sets. The pattern stays on the sleeves and bottoms. The chest is still plain white, which is what you want if the name is doing the seasonal work. Stars, unicorns, clouds and the fairy print are the same idea. If red feels too loud, a quieter sleeve colour does the same job. Sizes are on the <a href="/pyjamas/size-guide/">size guide</a>.</p>
 <p>A colour-and-white set, blue, pink, sage or mink, is the right pick when the design should be the only pattern. Navy or black vinyl on a mink or sage sleeve-colour still belongs on the white chest, where you can see the edges.</p>
 <p>If you are selling the finished nightwear, UK labelling rules still apply. A Christmas name does not change them. See the <a href="/fabrics/childrens-clothing/">children’s clothing page</a>. This site is not legal advice.</p>
 `,
-  closing: blanks(`<p>Red stripe, then three prints that still leave a white chest for a name. More colours and patterns are on the <a href="/pyjamas/size-guide/">size guide</a>.</p>${grid(christmasProducts)}`)
+  closing: blankMention("A Christmas name goes on the white chest of ", "plain 100% cotton pyjamas like these", ".")
 };
 
 function kidsTable() {
@@ -516,12 +364,12 @@ const sizePage = {
     { href: "/fabrics/childrens-clothing/", label: "Children's clothing" }
   ],
   faqs: [
-    { q: "Do these come in 7–8 or 9–10 years?", a: "The kids’ sets linked on this page are sold from 6–12 months up to 5–6 years. Use the 5–6 year row as the largest of this range, and check the flat chest rather than stretching an older child into it." },
+    { q: "Do these come in 7–8 or 9–10 years?", a: "The raglan sets in the table are sold from 6–12 months up to 5–6 years. Use the 5–6 year row as the largest of this range, and check the flat chest rather than stretching an older child into it." },
     { q: "Is the chest measurement all the way around?", a: "No. The chart these raglan figures come from says the measurements are flat, not circular. A is the chest width laid flat, taken 2.5 cm below the armhole. Twice that number is closer to a circumference, and even that is only a rough reading of a soft jersey." },
     { q: "Can I use the baby chart for a 6–12 month raglan?", a: "No. They are different garments. A 6–12 month raglan uses the 6/12mths row in the first table. A 6–12 month baby set uses the baby table. The chest figures are not the same." }
   ],
   body: `
-<p>${sharedFacts} The listings on this page stop at 5–6 years. Baby sets, further down, are a different long-sleeve pyjama and run from 0–3 months to 1–2 years.</p>
+<p>${sharedFacts} These raglan measurements stop at 5–6 years. Baby sets, further down, are a different long-sleeve pyjama and run from 0–3 months to 1–2 years.</p>
 ${measureFigure()}
 <ul>
   <li><strong>A, chest.</strong> Flat width, 2.5 cm below the armhole. This is the front-to-back measurement of the top laid flat, not the distance around the child.</li>
@@ -551,9 +399,9 @@ ${designTable()}
 </table>
 </div>
 ${babyDesignTable()}
-<p>White, light blue and pink baby sets are at the bottom of this page. A 6–12 month baby and a 6–12 month raglan can both be in the house at once. Use the chart that matches the garment, not the age alone.</p>
+<p>The baby sets are sold in white, light blue and pink. A 6–12 month baby and a 6–12 month raglan can both be in the house at once. Use the chart that matches the garment, not the age alone.</p>
 `,
-  closing: blanks(`<p>Kids’ raglan sets, from 6–12 months to 5–6 years, grouped by colour and print. Baby sets follow, on their own chart above.</p>${grouped(kidsCatalogue)}<h3 class="blank-group">Baby sets</h3><p>A different long-sleeve set, not the raglan measurements. These are 100% cotton.</p>${grid(babyProducts)}`)
+  closing: blankMention("The raglan measurements are for ", "plain 100% cotton pyjamas like these", ", from 6–12 months to 5–6 years.")
 };
 
 export const pyjamaPages = [htvPage, embroideryPage, sublimationPage, christmasPage, sizePage];
