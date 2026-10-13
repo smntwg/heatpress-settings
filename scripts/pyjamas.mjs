@@ -7,25 +7,25 @@ function esc(value) {
 }
 
 const photos = {
-  B0C24KD4J6: { w: 600, h: 803, alt: "Blue and white kids pyjamas with a plain white top" },
-  B0C28TCKL6: { w: 600, h: 801, alt: "Pink and white kids pyjamas with a plain white top" }
+  B0C24KD4J6: { w: 600, h: 803, alt: "Plain blue and white kids pyjamas with a white top" },
+  B0BSR58NC9: { w: 600, h: 799, alt: "Blue stripe kids pyjamas with a white top" }
 };
 
-const exampleShots = ["B0C24KD4J6", "B0C28TCKL6"];
-const exampleHref = "https://www.amazon.co.uk/dp/B0C24KD4J6";
+const exampleShots = ["B0C24KD4J6", "B0BSR58NC9"];
+const exampleHref = "https://www.amazon.co.uk/s?me=A1SAX4Y8C46TBJ&marketplaceID=A1F83G8C2ARO7P";
 
 function shots() {
   return exampleShots.map((asin) => {
     const photo = photos[asin];
     if (!photo) throw new Error(`No photo for ${asin}`);
-    return `<img src="/img/blanks/${asin}.webp" width="${photo.w}" height="${photo.h}" alt="${esc(photo.alt)}" loading="lazy" decoding="async">`;
+    return `<a href="${esc(exampleHref)}" rel="noopener noreferrer"><img src="/img/blanks/${asin}.webp" width="${photo.w}" height="${photo.h}" alt="${esc(photo.alt)}" loading="lazy" decoding="async"></a>`;
   }).join("");
 }
 
 export function blankMention(before, linkText, after = "") {
   return `<aside class="blank-note">
   <div class="blank-shots">${shots()}</div>
-  <p>${esc(before)}<a href="${exampleHref}" rel="noopener noreferrer">${esc(linkText)}</a>${esc(after)}</p>
+  <p>${esc(before)}<a href="${esc(exampleHref)}" rel="noopener noreferrer">${esc(linkText)}</a>${esc(after)}</p>
 </aside>`;
 }
 
