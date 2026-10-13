@@ -323,8 +323,8 @@ export const restPages = [
     description: "UK GDPR privacy notice for heatpress-settings.co.uk: what the site collects, cookies, advertising and the example Amazon pyjama link.",
     kicker: "Privacy",
     h1: "Privacy policy",
-    lede: "This notice explains what heatpress-settings.co.uk does with personal information. It was updated on 12 October 2026.",
-    modified: "2026-10-12",
+    lede: "This notice explains what heatpress-settings.co.uk does with personal information. It was updated on 13 October 2026.",
+    modified: "2026-10-13",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/privacy/", label: "Privacy" }
@@ -345,7 +345,7 @@ export const restPages = [
 <p>This version of the site does not set its own cookies. It does not load analytics, and it does not load advertising scripts. If that changes, this policy will be updated first, and any non-essential cookies will wait for a proper choice under the Privacy and Electronic Communications Regulations and UK GDPR.</p>
 <h2>Advertising and affiliate links</h2>
 <p>You may see a marked box that says the space is reserved for a future advert. Nothing is loaded in that box. There is no AdSense code and no ads.txt file yet.</p>
-<p>The cotton page, the children’s clothing page and the pyjama guides each include one plain link to an Amazon UK listing, as an example of the cotton pyjamas those notes are written around. Nothing is added to the address to track a commission. If we later add affiliate links or adverts, they will be labelled as such before they go live.</p>
+<p>The cotton page, the children’s clothing page and the pyjama guides each show a plain set and a patterned set, and those photos and the sentence beside them link to the same Amazon UK page for that range. Nothing is added to the address to track a commission. If we later add affiliate links or adverts, they will be labelled as such before they go live.</p>
 <h2>How long we keep email</h2>
 <p>We keep correspondence for as long as we need it to handle your question and any follow-up, and then delete it. Hosting logs are kept on the host’s schedule, not ours.</p>
 <h2>Your rights</h2>

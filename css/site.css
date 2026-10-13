@@ -455,12 +455,20 @@ ol.steps, .prose ol, .prose ul { padding-left: 1.2rem; }
   gap: 0.4rem;
   flex: none;
 }
+.blank-shots a {
+  display: block;
+  line-height: 0;
+  text-decoration: none;
+}
 .blank-shots img {
   width: 4.75rem;
   height: auto;
   display: block;
   background: #fff;
   border: 1px solid var(--line);
+}
+.blank-shots a:hover img {
+  border-color: var(--heat-deep);
 }
 .blank-note p {
   margin: 0;
