@@ -71,6 +71,20 @@
         <h2>Sources</h2><ul class="sources"><li><a href="https://www.siser.com/news/how-to-prevent-discoloring-and-scorching-heat-sensitive-textiles/" rel="noopener noreferrer">Siser, heat-sensitive textiles</a></li><li><a href="https://www.siser.com/cad-cut/hi-5/" rel="noopener noreferrer">Siser HI-5</a></li><li><a href="https://www.garmentfilms.co.uk/downloads/645cf2144e810192Application_Guidelines_new.pdf" rel="noopener noreferrer">Garment Films application guidelines (PDF)</a></li></ul>
         
       </div>
+      <aside class="signup" aria-labelledby="signup-title">
+  <h2 id="signup-title">Free printable cheat sheet</h2>
+  <p>Every temperature, time, pressure and peel from the charts on this site, on two A4 pages for beside your press. Enter your email and we will send you the PDF link.</p>
+  <form class="signup-form" action="/api/subscribe" method="post" novalidate>
+    <div class="signup-row">
+      <label class="hp" aria-hidden="true">Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      <label class="hp" for="signup-email">Email address</label>
+      <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.co.uk">
+      <button type="submit">Email me the cheat sheet</button>
+    </div>
+    <p class="signup-status" role="status" aria-live="polite"></p>
+  </form>
+  <p class="fine">We keep only your email address, to send the cheat sheet and occasional site updates. Reply “unsubscribe” to any email to be removed. See the <a href="/privacy/">privacy notice</a>.</p>
+</aside>
       <aside class="related"><h2>Related guides</h2><ul><li><a href="/fabrics/polyester/">Polyester</a></li><li><a href="/fabrics/nylon/">Nylon</a></li><li><a href="/fabrics/childrens-clothing/">Children’s clothes</a></li><li><a href="/methods/sublimation-polyester/">Sublimation heat is higher still</a></li></ul></aside>
       <aside class="ad-slot" aria-label="Reserved advertisement space">
   <p class="ad-kicker">Advertisement</p>
@@ -89,6 +103,6 @@
   </div>
 </footer>
   <script src="/js/nav.js" defer></script>
-  
+  <script src="/js/signup.js" defer></script>
 </body>
 </html>

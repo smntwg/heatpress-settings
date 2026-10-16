@@ -161,6 +161,28 @@ function adSlot() {
 </aside>`;
 }
 
+function signupBox() {
+  return `<aside class="signup" aria-labelledby="signup-title">
+  <h2 id="signup-title">Free printable cheat sheet</h2>
+  <p>Every temperature, time, pressure and peel from the charts on this site, on two A4 pages for beside your press. Enter your email and we will send you the PDF link.</p>
+  <form class="signup-form" action="/api/subscribe" method="post" novalidate>
+    <div class="signup-row">
+      <label class="hp" aria-hidden="true">Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
+      <label class="hp" for="signup-email">Email address</label>
+      <input id="signup-email" type="email" name="email" required autocomplete="email" placeholder="you@example.co.uk">
+      <button type="submit">Email me the cheat sheet</button>
+    </div>
+    <p class="signup-status" role="status" aria-live="polite"></p>
+  </form>
+  <p class="fine">We keep only your email address, to send the cheat sheet and occasional site updates. Reply “unsubscribe” to any email to be removed. See the <a href="/privacy/">privacy notice</a>.</p>
+</aside>`;
+}
+
+function wantsSignup(page) {
+  if (page.signup === false) return false;
+  return page.path === "/" || /^\/(methods|fabrics|troubleshooting)\//.test(page.path);
+}
+
 function related(links) {
   if (!links || !links.length) return "";
   const items = links.map((link) => `<li><a href="${link.href}">${esc(link.label)}</a></li>`).join("");
@@ -315,13 +337,13 @@ function documentHtml(page) {
         ${sources(page.sources)}
         ${page.closing || ""}
       </div>
-      ${related(page.related)}
+      ${wantsSignup(page) ? signupBox() + "\n      " : ""}${related(page.related)}
       ${page.ad === false ? "" : adSlot()}
     </div>
   </main>
   ${footer()}
   <script src="/js/nav.js" defer></script>
-  ${scripts}
+  ${wantsSignup(page) ? '<script src="/js/signup.js" defer></script>' : ""}${scripts}
 </body>
 </html>
 `;
