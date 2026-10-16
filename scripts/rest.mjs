@@ -348,7 +348,8 @@ export const restPages = [
 <p>This version of the site does not set its own cookies. It does not load analytics, and it does not load advertising scripts. If that changes, this policy will be updated first, and any non-essential cookies will wait for a proper choice under the Privacy and Electronic Communications Regulations and UK GDPR.</p>
 <h2>Advertising and affiliate links</h2>
 <p>You may see a marked box that says the space is reserved for a future advert. Nothing is loaded in that box. There is no AdSense code and no ads.txt file yet.</p>
-<p>The cotton page, the children’s clothing page and the pyjama guides each show a plain set and a patterned set, and those photos and the sentence beside them link to the same Amazon UK page for that range. Nothing is added to the address to track a commission. If we later add affiliate links or adverts, they will be labelled as such before they go live.</p>
+<p>The cotton page, the children’s clothing page and the pyjama guides each show a plain set and a patterned set, and those photos and the sentence beside them link to the same Amazon UK page for that range. Nothing is added to the address to track a commission.</p>
+<p>The children’s clothing and tote bag pages each include one affiliate link to Craft Buddy Shop, through the Awin network, labelled “Affiliate link” beside it. If you buy through it, we may earn a small commission at no extra cost to you. Awin may set its own tracking cookie once you click through to the shop; see <a href="https://www.awin.com/gb/privacy" rel="noopener noreferrer">awin.com/gb/privacy</a>. This does not change which settings we publish. Any other affiliate links or adverts will be labelled the same way before they go live.</p>
 <h2>How long we keep email</h2>
 <p>We keep correspondence for as long as we need it to handle your question and any follow-up, and then delete it. Hosting logs are kept on the host’s schedule, not ours.</p>
 <h2>Your rights</h2>
