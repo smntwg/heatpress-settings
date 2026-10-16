@@ -1,4 +1,6 @@
 import { blankMention } from "./pyjamas.mjs";
+import { craftBuddyNote } from "./affiliates.mjs";
+
 
 const likedBlanks = blankMention("For a kids’ set, we press onto ", "plain 100% cotton pyjamas like these", ".");
 
@@ -168,6 +170,7 @@ ${likedBlanks}
   },
   {
     path: "/fabrics/childrens-clothing/",
+    affiliateDisclosure: true,
     title: "Heat press settings for children's clothing and pyjamas",
     description: "Lower-temperature HTV options for children's clothes, including Siser HI-5 at 120°C, plus care-label, popper and UK nightwear notes.",
     kicker: "Fabric",
@@ -215,11 +218,13 @@ ${likedBlanks}
 <p>Everyday EasyWeed at 150°C remains the cotton chart if the garment can take it. Say so on a test seam before you press a name across the chest. Keep plastic poppers, zips and existing prints off the platen. They melt or mark, and that is not a vinyl fault.</p>
 <p><a href="/methods/sublimation-polyester/">Sublimation</a> only works on light polyester, at 190–205°C on the charts we cite. That is hot for a child’s top. Test a spare. <a href="/methods/dtf/">DTF</a> examples start around 140°C and go to 160°C. The cooler end is kinder, and it is still not a promise.</p>
 ${likedBlanks}
+${craftBuddyNote("For a quick finish without cutting vinyl, a ", "small pack of iron-on motifs from Craft Buddy", " (hearts, flowers and butterflies, 20–50 mm) works on a plain kids’ top. Press them at the temperature on their own pack, not the HTV rows above.")}
 <p>If a press leaves a shiny box, stop. The <a href="/troubleshooting/scorch-marks/">scorch page</a> explains why pressing again hotter will not fix it.</p>
 `
   },
   {
     path: "/fabrics/tote-bags/",
+    affiliateDisclosure: true,
     title: "Heat press settings for tote bags and canvas",
     description: "How to heat press a cotton canvas tote: use the cotton HTV or DTF chart, pre-press the panel, and why plain canvas will not sublimate.",
     kicker: "Fabric",
@@ -253,6 +258,7 @@ ${likedBlanks}
 <p>Pre-press longer than you would a thin T-shirt. Canvas holds water from the washing it had at the mill, and it holds creases. Siser’s short pre-press is 2–3 seconds for garments; Garment Films’ FAQ allows 5–10 seconds to clear moisture and wrinkles. A tote often needs the longer end. Test.</p>
 <p>Uneven pressure is the other miss. Sawgrass, writing about a polo with buttons and a collar, say the surface needs to be even and suggest a pressing pillow inside the shirt. A tote with a pocket or a hem in the design area has the same problem. Move the design onto the plain panel, or build the low side up so the platen meets the film everywhere.</p>
 <p>Coated canvas and leatherette bags are a different material. Garment Films say their HTV chart is not for coated fabrics. Use the bag maker’s instructions rather than the cotton row.</p>
+${craftBuddyNote("If you want a little extra on a plain tote, ", "Craft Buddy’s iron-on motifs", " are small enough to sit beside a vinyl name. Follow the temperature on their pack.")}
 `
   }
 ];

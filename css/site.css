@@ -681,3 +681,8 @@ table.compact { min-width: 0; }
 .signup .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .signup-status { min-height: 1.2em; font-weight: 600; }
 .signup .fine { font-size: 0.85rem; color: var(--muted); }
+.affiliate-note {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin: 0.35rem 0 0;
+}
