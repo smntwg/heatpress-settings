@@ -3,6 +3,7 @@ import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { pages } from "./pages.mjs";
+import { affiliatePageLine } from "./affiliates.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://heatpress-settings.co.uk";
@@ -327,7 +328,8 @@ function documentHtml(page) {
       <header class="page-intro">
         <p class="kicker">${esc(page.kicker)}</p>
         <h1>${esc(page.h1)}</h1>
-        <p class="lede">${esc(page.lede)}</p>
+        <p class="lede">${esc(page.lede)}</p>${page.affiliateDisclosure ? `
+        ${affiliatePageLine()}` : ""}
       </header>
       <div class="prose">
         <aside class="notice"><p>${esc(page.notice || "These are starting points from the charts named below. Read the instructions for the product you are pressing, then test on a scrap or a spare blank. The number on a heat press dial is often not the true platen temperature.")}</p></aside>

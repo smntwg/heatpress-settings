@@ -1,6 +1,7 @@
 import { blankMention } from "./pyjamas.mjs";
 import { craftBuddyNote } from "./affiliates.mjs";
 
+
 const likedBlanks = blankMention("For a kids’ set, we press onto ", "plain 100% cotton pyjamas like these", ".");
 
 export const fabricPages = [
@@ -169,6 +170,7 @@ ${likedBlanks}
   },
   {
     path: "/fabrics/childrens-clothing/",
+    affiliateDisclosure: true,
     title: "Heat press settings for children's clothing and pyjamas",
     description: "Lower-temperature HTV options for children's clothes, including Siser HI-5 at 120°C, plus care-label, popper and UK nightwear notes.",
     kicker: "Fabric",
@@ -222,6 +224,7 @@ ${craftBuddyNote("For a quick finish without cutting vinyl, a ", "small pack of 
   },
   {
     path: "/fabrics/tote-bags/",
+    affiliateDisclosure: true,
     title: "Heat press settings for tote bags and canvas",
     description: "How to heat press a cotton canvas tote: use the cotton HTV or DTF chart, pre-press the panel, and why plain canvas will not sublimate.",
     kicker: "Fabric",

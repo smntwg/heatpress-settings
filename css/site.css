@@ -684,5 +684,5 @@ table.compact { min-width: 0; }
 .affiliate-note {
   font-size: 0.85rem;
   color: var(--muted);
-  margin-top: -0.4rem;
+  margin: 0.35rem 0 0;
 }
