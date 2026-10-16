@@ -655,3 +655,29 @@ table.compact { min-width: 0; }
   }
   .menu:not([open]) .menu-panel { display: none; }
 }
+
+/* Cheat sheet signup */
+.signup {
+  margin: 1.5rem 0;
+  padding: 1rem 1.15rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--heat);
+  border-radius: 6px;
+}
+.signup h2 { margin: 0 0 0.3rem; font-size: 1.15rem; }
+.signup p { margin: 0.3rem 0; }
+.signup-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.6rem; }
+.signup-row input[type="email"] {
+  flex: 1 1 14rem; min-width: 0; padding: 0.55rem 0.7rem;
+  border: 1px solid var(--line); border-radius: 4px; font: inherit; background: var(--paper); color: var(--ink);
+}
+.signup-row button {
+  padding: 0.55rem 1rem; border: 0; border-radius: 4px; font: inherit; font-weight: 700;
+  background: var(--charcoal); color: var(--header-text); cursor: pointer;
+}
+.signup-row button:hover, .signup-row button:focus-visible { background: var(--heat-deep); }
+.signup-row button[disabled] { opacity: 0.6; cursor: wait; }
+.signup .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.signup-status { min-height: 1.2em; font-weight: 600; }
+.signup .fine { font-size: 0.85rem; color: var(--muted); }
