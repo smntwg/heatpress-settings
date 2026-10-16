@@ -27,7 +27,7 @@ async function send(key, payload) {
     headers: { authorization: `Bearer ${key}`, "content-type": "application/json" },
     body: JSON.stringify(payload)
   });
-  if (!res.ok) throw new Error(`Resend ${res.status}: ${(await res.text()).slice(0, 200)}`);
+  if (!res.ok) { const e = new Error(`Resend ${res.status}: ${(await res.text()).slice(0, 200)}`); e.status = res.status; throw e; }
   return res.json();
 }
 
@@ -65,7 +65,7 @@ export async function onRequestPost({ request, env }) {
     await send(env.RESEND_API_KEY, subscriberEmail(email));
   } catch (err) {
     console.log("subscriber send failed", String(err));
-    return json({ ok: false, error: "Sorry, we could not send the email just now. Please try again later." }, 502);
+    return json({ ok: false, error: "Sorry, we could not send the email just now. Please try again later.", code: err.status || "fetch" }, 500);
   }
   const page = String(data.page || "").slice(0, 200);
   try {
