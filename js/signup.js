@@ -1,5 +1,7 @@
 (function () {
   "use strict";
+  // Same rule as functions/api/subscribe.js
+  var EMAIL_RE = /^[^\s@<>()",;:]+@[^\s@<>()",;:]+\.[a-z]{2,}$/i;
   var forms = document.querySelectorAll("form.signup-form");
   Array.prototype.forEach.call(forms, function (form) {
     var status = form.querySelector(".signup-status");
@@ -8,6 +10,7 @@
       event.preventDefault();
       var email = form.elements.email.value.trim();
       if (!email) { status.textContent = "Please enter your email address."; return; }
+      if (email.length > 254 || !EMAIL_RE.test(email)) { status.textContent = "Please enter a valid email address."; return; }
       button.disabled = true;
       status.textContent = "Sending…";
       fetch("/api/subscribe", {

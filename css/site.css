@@ -172,6 +172,9 @@ a:hover { color: var(--heat-hot); }
   }
   .nav-drop[open] ul { display: block; }
   .nav-drop a { display: block; }
+  /* The main nav lives inside the mobile <details> menu. At desktop widths it
+     must show even while that <details> is closed (js/nav.js also opens it). */
+  .menu::details-content { content-visibility: visible; display: contents; }
 }
 
 .hero { padding: 2.2rem 0 1rem; }
@@ -511,6 +514,9 @@ table.compact { min-width: 0; }
 }
 
 .ad-slot p { margin: 0.25rem 0; }
+/* Empty ad slots stay in the markup as hooks but are hidden from visitors.
+   Add the class "is-filled" when a real advert goes in. */
+.ad-slot:not(.is-filled) { display: none; }
 .ad-kicker {
   font-size: 0.72rem;
   letter-spacing: 0.08em;
@@ -618,7 +624,7 @@ table.compact { min-width: 0; }
   font-size: 0.78rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  font-family: var(--sans);
+  font-family: var(--serif);
   margin: 0 0 0.4rem;
 }
 
@@ -681,6 +687,7 @@ table.compact { min-width: 0; }
 .signup .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .signup-status { min-height: 1.2em; font-weight: 600; }
 .signup .fine { font-size: 0.85rem; color: var(--muted); }
+.signup .fine a { color: var(--heat-deep); }
 .affiliate-note {
   font-size: 0.85rem;
   color: var(--muted);
