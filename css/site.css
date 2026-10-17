@@ -17,8 +17,8 @@
   --bad-ink: #7f1d1d;
   --bad-line: #b42318;
   --shadow: 0 1px 0 rgba(28, 27, 25, 0.05), 0 14px 36px rgba(28, 27, 25, 0.06);
-  --serif: Georgia, "Iowan Old Style", "Palatino Linotype", Palatino, "Liberation Serif", serif;
-  --sans: "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --serif: "Archivo", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --sans: "Work Sans", "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --max: 72rem;
   --measure: 42rem;
 }
