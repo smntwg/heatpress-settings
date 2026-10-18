@@ -165,7 +165,7 @@ function adSlot() {
 function signupBox() {
   return `<aside class="signup" aria-labelledby="signup-title">
   <h2 id="signup-title">Free printable cheat sheet</h2>
-  <p>Every temperature, time, pressure and peel from the charts on this site, on two A4 pages for beside your press. Enter your email and we will send you the PDF link.</p>
+  <p>Every temperature, time, pressure and peel from the charts on this site, on two A4 pages for beside your press. Enter your email to get the PDF link.</p>
   <form class="signup-form" action="/api/subscribe" method="post" novalidate>
     <div class="signup-row">
       <label class="hp" aria-hidden="true">Website <input type="text" name="website" tabindex="-1" autocomplete="off"></label>
@@ -175,7 +175,7 @@ function signupBox() {
     </div>
     <p class="signup-status" role="status" aria-live="polite"></p>
   </form>
-  <p class="fine">We keep only your email address, to send the cheat sheet and occasional site updates. Reply “unsubscribe” to any email to be removed. See the <a href="/privacy/">privacy notice</a>.</p>
+  <p class="fine">Only your email address is kept, to send the cheat sheet and occasional site updates. Reply “unsubscribe” to any email to be removed. See the <a href="/privacy/">privacy notice</a>.</p>
 </aside>`;
 }
 
@@ -384,7 +384,7 @@ function homePage() {
     description,
     kicker: "UK guide",
     h1: "Heat press settings you can start from",
-    lede: "Pick a method and a fabric. You get temperature in Celsius, with Fahrenheit in brackets, plus time, pressure and peel. Each card is a published manufacturer example, not a number we averaged.",
+    lede: "Pick a method and a fabric. You get temperature in Celsius, with Fahrenheit in brackets, plus time, pressure and peel. Each card is a published manufacturer example, not an averaged number.",
     crumbs: [{ href: "/", label: "Home" }],
     schema: "home",
     ogType: "website",

@@ -1,4 +1,4 @@
-import { PYJAMA_DIR, PYJAMA_PLAIN, PYJAMA_PATTERNED, pyjamaSwapScript } from "./pyjama-pool.mjs";
+import { pyjamaPhotos } from "./pyjama-pool.mjs";
 function esc(value) {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -10,9 +10,7 @@ function esc(value) {
 const exampleHref = "https://www.amazon.co.uk/s?me=A1SAX4Y8C46TBJ&marketplaceID=A1F83G8C2ARO7P";
 
 function shots() {
-  return [PYJAMA_PLAIN[0], PYJAMA_PATTERNED[0]].map(([file, alt]) =>
-    `<a href="${esc(exampleHref)}" rel="noopener noreferrer"><img src="${PYJAMA_DIR}${file}.webp" width="600" height="800" alt="${esc(alt)}" loading="lazy" decoding="async"></a>`
-  ).join("") + pyjamaSwapScript();
+  return pyjamaPhotos(esc(exampleHref));
 }
 
 export function blankMention(before, linkText, after = "") {
@@ -140,7 +138,7 @@ const htvPage = {
 </div>
 <p>EasyWeed’s 305°F is the figure Siser print beside 150°C. One Flex also lists 150°C for 5 seconds and 130°C for 10 seconds. Garment Films call 140°C for 8 seconds the standard recommendation. Their chart does not print a pressure, so use the sheet in the packet rather than guessing “medium”.</p>
 <p>HI-5 is the film Siser describe as certified for baby clothing, and the product is OEKO-TEX Standard 100 Class I. That statement is about the film. On the product page, 120°C for 5 seconds is for textiles up to 150 g/m². Heavier cloth is 150°C for 5 seconds at high pressure. About 200 gsm is the heavier row. Do not drop to 120°C on HI-5 just because the top is small.</p>
-<p>EcoStretch is the cooler stretch film: 120°C (250°F), medium, 10–15 seconds, hot peel, listed for cotton. The instruction sheet we use does not split that film by fabric weight. EasyWeed Stretch is much hotter and firmer, at 160°C for 20 seconds, and it does list cotton. If a spare shines or the cotton yellows, stop. The <a href="/troubleshooting/scorch-marks/">scorch page</a> is why a second, hotter press will not help.</p>
+<p>EcoStretch is the cooler stretch film: 120°C (250°F), medium, 10–15 seconds, hot peel, listed for cotton. The manufacturer’s instruction sheet does not split that film by fabric weight. EasyWeed Stretch is much hotter and firmer, at 160°C for 20 seconds, and it does list cotton. If a spare shines or the cotton yellows, stop. The <a href="/troubleshooting/scorch-marks/">scorch page</a> is why a second, hotter press will not help.</p>
 <p>Glitter’s North America time is 15–20 seconds with a warm peel, at least 15 seconds off the press. The EU glitter page says 15 seconds and a hot or cold peel. Same brand, different sheets. Cover the garment. Glitter is thicker than everyday PU and it does not stretch with a knit the way EcoStretch does, so a large glitter name on a chest that gets pulled on is a spare-top test, not a batch.</p>
 <h2>Placement</h2>
 <p>Lay the top flat, front up, sleeves out to the sides. The design sits in the middle of the white chest, below the neckband, with plain cotton around it. Measure the gap from the neckband on a test top so the next one matches. Keep the carrier off the raglan seam. If the platen also covers a printed sleeve, that print takes the same heat. Slide the top so the platen meets the white chest and as little of the print as you can manage.</p>

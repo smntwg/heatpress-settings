@@ -74,7 +74,7 @@ export const restPages = [
       { q: "Should I turn every film down to 120°C?", a: "Only if that film publishes a low-temperature press. HI-5 does: 120°C for 5 seconds on lighter fabrics. One Flex lists 120°C for 15 seconds as a sensitive-garment option. Siser’s StripFlock example is different: longer time, and not below 140°C. Glitter charts on this site stay at 160°C." }
     ],
     body: `
-<p>Siser’s heat-sensitive article is the clearest maker’s note we have. They name polyester, and also rayon, silk and anything you are unsure about. Their advice, in their order, is:</p>
+<p>Siser’s heat-sensitive article is the clearest maker’s note on this. They name polyester, and also rayon, silk and anything you are unsure about. Their advice, in their order, is:</p>
 <ol>
   <li>Do not press a “do not iron” or “cool iron” garment unless you can spare it. Test an inside seam if you must.</li>
   <li>Use a heat press rather than an iron. An iron cycles through a range. A press is steadier, though its dial can still be wrong.</li>
@@ -311,10 +311,10 @@ export const restPages = [
 <h2>Where the numbers come from</h2>
 <p>The lookup and the method pages use charts and instructions from Siser (EasyWeed and the speciality films), Garment Films’ UK application guidelines, Xpres sublimation and DTF guides, and Sawgrass’s sublimation press chart. Troubleshooting pages add Siser’s heat-sensitive fabric article and a Heat Press Nation note on ghosting. Each page lists the links.</p>
 <p>Where two official pages disagree, both are shown. Siser’s glitter time is the obvious case: 15–20 seconds and a warm peel on the North America page, 15 seconds and a hot or cold peel on the EU page. The instruction in your box wins.</p>
-<h2>What we will not do</h2>
-<p>We do not invent a brand setting we cannot point at. If a film does not list nylon, the lookup says so instead of offering the cotton number with a shrug. If a chart has no pressure, the card says the pressure is not listed.</p>
+<h2>What this site will not do</h2>
+<p>It does not invent a brand setting it cannot point at. If a film does not list nylon, the lookup says so instead of offering the cotton number with a shrug. If a chart has no pressure, the card says the pressure is not listed.</p>
 <p>Nothing here is a promise that your press will match. Dials lie by enough degrees to matter. Siser’s published example is the EasyPress note on EasyWeed: add about 30°, written beside 305°F/150°C and read as 30°F rather than 30°C. Test on a scrap or a spare blank.</p>
-<p>The guides were checked against those sources on 7 October 2026. Makers revise sheets. If a product page and this site diverge, believe the product page, and <a href="/contact/">tell us</a>.</p>
+<p>The guides were checked against those sources on 7 October 2026. Makers revise sheets. If a product page and this site diverge, believe the product page, and <a href="/contact/">send a correction</a>.</p>
 `
   },
   {
@@ -377,7 +377,7 @@ export const restPages = [
     ],
     body: `
 <p><a href="mailto:contact@heatpress-settings.co.uk">contact@heatpress-settings.co.uk</a></p>
-<p>Useful mail is a correction: the film name, the page you were on, and the manufacturer link that disagrees with us. We cannot set the dial for every press and every own-brand vinyl. If the packet in your hand has a temperature, that packet wins.</p>
+<p>Useful mail is a correction: the film name, the page you were on, and the manufacturer link that disagrees with this site. No chart can set the dial for every press and every own-brand vinyl. If the packet in your hand has a temperature, that packet wins.</p>
 <p>Please do not send passwords, payment card numbers or anything else you would not want in an ordinary email. The <a href="/privacy/">privacy notice</a> explains what happens to messages.</p>
 `
   }

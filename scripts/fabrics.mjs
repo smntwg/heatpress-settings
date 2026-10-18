@@ -162,9 +162,9 @@ ${likedBlanks}
 </table>
 </div>
 <p>Standard EasyWeed’s “for use on” list in that same instruction sheet is cotton, poly-cotton, polyester and leather. It does not say nylon. Do not borrow the Extra row for a standard roll, or the other way round.</p>
-<p>EcoStretch lists Lycra or spandex, not nylon, at 120°C. Siser Metal, Glitter, Holographic and StripFlock Pro do not list nylon on the pages we used. Garment Films are explicit: not suitable for nylon or coated fabrics.</p>
+<p>EcoStretch lists Lycra or spandex, not nylon, at 120°C. Siser Metal, Glitter, Holographic and StripFlock Pro do not list nylon on their published pages. Garment Films are explicit: not suitable for nylon or coated fabrics.</p>
 <h2>Sublimation and DTF</h2>
-<p>The Sawgrass chart we cite does not list nylon. Xpres describe sublimation for polyester and polymer coatings, and DTF for cotton, polyester and blends. There is no nylon time on those pages worth repeating. A coated item sold as a sublimation blank is a different product: use the blank maker’s card.</p>
+<p>The Sawgrass chart cited here does not list nylon. Xpres describe sublimation for polyester and polymer coatings, and DTF for cotton, polyester and blends. There is no nylon time on those pages worth repeating. A coated item sold as a sublimation blank is a different product: use the blank maker’s card.</p>
 <p>Siser’s practical test, from their heat-sensitive article, is an inconspicuous press with a cover sheet, and a spare item if the piece matters. A shiny patch on nylon does not wash out. Read <a href="/troubleshooting/scorch-marks/">scorch marks</a> before a second attempt.</p>
 `
   },
@@ -216,7 +216,7 @@ ${likedBlanks}
 </div>
 <p>Siser’s heat-sensitive article says HI-5 is laboratory tested and certified for baby clothing, and the product is OEKO-TEX Standard 100 Class I. That is a statement about the film, not a certificate for your finished pyjamas. EcoStretch is the low-temperature stretch film; it is listed for cotton, polyester and elastane, and the instruction sheet does not call it a babywear product.</p>
 <p>Everyday EasyWeed at 150°C remains the cotton chart if the garment can take it. Say so on a test seam before you press a name across the chest. Keep plastic poppers, zips and existing prints off the platen. They melt or mark, and that is not a vinyl fault.</p>
-<p><a href="/methods/sublimation-polyester/">Sublimation</a> only works on light polyester, at 190–205°C on the charts we cite. That is hot for a child’s top. Test a spare. <a href="/methods/dtf/">DTF</a> examples start around 140°C and go to 160°C. The cooler end is kinder, and it is still not a promise.</p>
+<p><a href="/methods/sublimation-polyester/">Sublimation</a> only works on light polyester, at 190–205°C on the charts cited here. That is hot for a child’s top. Test a spare. <a href="/methods/dtf/">DTF</a> examples start around 140°C and go to 160°C. The cooler end is kinder, and it is still not a promise.</p>
 ${likedBlanks}
 ${craftBuddyNote("For a quick finish without cutting vinyl, a ", "small pack of iron-on motifs from Craft Buddy", " (hearts, flowers and butterflies, 20–50 mm) works on a plain kids’ top. Press them at the temperature on their own pack, not the HTV rows above.")}
 <p>If a press leaves a shiny box, stop. The <a href="/troubleshooting/scorch-marks/">scorch page</a> explains why pressing again hotter will not fix it.</p>

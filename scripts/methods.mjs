@@ -296,7 +296,7 @@ export const methodPages = [
 </table>
 </div>
 <p>Sawgrass call their chart a starting place and say the real result also depends on the blank, a calibrated press, colour management and practice. Their polo article prints 400°F (204°C) rather than 205°C, at high pressure rather than medium. Treat that as the same ballpark with a different pressure note, not as a third temperature you need to hit exactly.</p>
-<p>374°F next to the Xpres figure is our conversion. Xpres publish 190°C only. 400°F is what Sawgrass print; a straight conversion of 205°C is 401°F.</p>
+<p>374°F next to the Xpres figure is a conversion. Xpres publish 190°C only. 400°F is what Sawgrass print; a straight conversion of 205°C is 401°F.</p>
 <h2>What will not sublimate</h2>
 <p><a href="/fabrics/cotton/">Cotton</a>, dark shirts and ordinary <a href="/fabrics/tote-bags/">canvas totes</a> are out. So are <a href="/pyjamas/sublimation/">100% cotton pyjamas</a>, including a white chest. <a href="/fabrics/nylon/">Nylon</a> is not on these charts and it scorches at this heat. <a href="/fabrics/poly-cotton/">Poly-cotton</a> only takes dye in the polyester portion. For a full-colour design on cotton, use <a href="/methods/dtf/">DTF</a> or cut <a href="/methods/standard-htv/">HTV</a> instead.</p>
 <p>If the image has a shadow or a double edge, that is <a href="/troubleshooting/sublimation-ghosting/">ghosting</a>: the paper moved, or the shirt shrank, while dye was still transferring. If the colour is weak, start with the <a href="/troubleshooting/faded-sublimation/">faded print</a> checks before you add time.</p>
@@ -347,7 +347,7 @@ export const methodPages = [
   </tbody>
 </table>
 </div>
-<p>That is the whole published mug line from the Sawgrass chart this site uses. We are not filling the gap with a single “best” minute, because Sawgrass did not print one. A test mug, cut in half by time, tells you more than another blog average.</p>
+<p>That is the whole published mug line from the Sawgrass chart this site uses. This site does not fill the gap with a single “best” minute, because Sawgrass did not print one. A test mug, cut in half by time, tells you more than another blog average.</p>
 <p>Colour on the paper is not the finished colour. The same Xpres note that applies to shirts applies here: sublimation ink often looks stronger after it is heated. Judge a pressed mug, not the printout.</p>
 <p>Ghosting on a mug is a shifted wrap. Tape the edges, close the press smoothly, and open it without spinning the mug against the paper. The <a href="/troubleshooting/sublimation-ghosting/">ghosting guide</a> covers fabric and hard surfaces. A weak image is more often time, temperature or a missing coating, which is the <a href="/troubleshooting/faded-sublimation/">faded sublimation</a> list.</p>
 <p>Stainless travel cups and latte glasses are different blanks. They are not this ceramic row. If Sawgrass do not list your blank, use the card that came with it.</p>
