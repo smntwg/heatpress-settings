@@ -323,8 +323,8 @@ export const restPages = [
     description: "UK GDPR privacy notice for heatpress-settings.co.uk: what the site collects, cookies, advertising and the example Amazon pyjama link.",
     kicker: "Privacy",
     h1: "Privacy policy",
-    lede: "This notice explains what heatpress-settings.co.uk does with personal information. It was updated on 13 October 2026.",
-    modified: "2026-10-13",
+    lede: "This notice explains what heatpress-settings.co.uk does with personal information. It was updated on 18 October 2026.",
+    modified: "2026-10-18",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/privacy/", label: "Privacy" }
