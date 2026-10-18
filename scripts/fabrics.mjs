@@ -2,7 +2,7 @@ import { blankMention } from "./pyjamas.mjs";
 import { craftBuddyNote } from "./affiliates.mjs";
 
 
-const likedBlanks = blankMention("For a kids’ set, we press onto ", "plain 100% cotton pyjamas like these", ".");
+const likedBlanks = blankMention("For a kids’ set, ", "plain 100% cotton pyjamas like these", " are available on Amazon UK.");
 
 export const fabricPages = [
   {

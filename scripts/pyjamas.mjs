@@ -1,3 +1,4 @@
+import { PYJAMA_DIR, PYJAMA_PLAIN, PYJAMA_PATTERNED, pyjamaSwapScript } from "./pyjama-pool.mjs";
 function esc(value) {
   return String(value)
     .replace(/&/g, "&amp;")
@@ -6,20 +7,12 @@ function esc(value) {
     .replace(/"/g, "&quot;");
 }
 
-const photos = {
-  B0C24KD4J6: { w: 600, h: 803, alt: "Plain blue and white kids pyjamas with a white top" },
-  B0BSR58NC9: { w: 600, h: 799, alt: "Blue stripe kids pyjamas with a white top" }
-};
-
-const exampleShots = ["B0C24KD4J6", "B0BSR58NC9"];
 const exampleHref = "https://www.amazon.co.uk/s?me=A1SAX4Y8C46TBJ&marketplaceID=A1F83G8C2ARO7P";
 
 function shots() {
-  return exampleShots.map((asin) => {
-    const photo = photos[asin];
-    if (!photo) throw new Error(`No photo for ${asin}`);
-    return `<a href="${esc(exampleHref)}" rel="noopener noreferrer"><img src="/img/blanks/${asin}.webp" width="${photo.w}" height="${photo.h}" alt="${esc(photo.alt)}" loading="lazy" decoding="async"></a>`;
-  }).join("");
+  return [PYJAMA_PLAIN[0], PYJAMA_PATTERNED[0]].map(([file, alt]) =>
+    `<a href="${esc(exampleHref)}" rel="noopener noreferrer"><img src="${PYJAMA_DIR}${file}.webp" width="600" height="800" alt="${esc(alt)}" loading="lazy" decoding="async"></a>`
+  ).join("") + pyjamaSwapScript();
 }
 
 export function blankMention(before, linkText, after = "") {
@@ -160,7 +153,7 @@ ${designTable()}
 <p>After peeling, leave the top for 24 hours before it is washed. Wash inside out. Skip fabric conditioner. Siser also say to skip bleach. These film notes do not print a wash temperature for the pyjamas, so follow the care label in the garment. A hot tumble on the day you pressed is a different test from the one they published. If an edge lifts later, the checks are on the <a href="/troubleshooting/vinyl-peeling/">peeling page</a>.</p>
 <p>If you sell children’s nightwear in the UK, a name on the chest does not remove the labelling rules. The <a href="/fabrics/childrens-clothing/">children’s clothing page</a> points at the trading-standards summary. This site is not legal advice.</p>
 `,
-  closing: blankMention("We press onto ", "plain 100% cotton pyjamas like these", ". The white chest is the part that takes the film.")
+  closing: blankMention("", "Plain 100% cotton pyjamas like these", " are available on Amazon UK. The white chest is the part that takes the film.")
 };
 
 const embroideryPage = {
@@ -219,7 +212,7 @@ ${designTable()}
 <p>For embroidery, treat the right-hand column as a ceiling. A filled motif should be smaller than a name in satin stitch at the same age. Baby sets use a different garment and a shorter list of widths, on the <a href="/pyjamas/size-guide/">size guide</a>. The same stabiliser advice applies. The hoop just gets smaller.</p>
 <p>If you would rather press a name than stitch it, the cotton film charts and the chest placement are on the <a href="/pyjamas/htv/">HTV page</a>. Heat from an iron is a different job from those charts. Do not slide a hot iron across finished embroidery. If the top needs flattening, press from the back with a cloth after the stitches have cooled, and follow the care label. These pages do not print an iron temperature for that.</p>
 `,
-  closing: blankMention("We stitch a name onto the white chest of ", "plain 100% cotton pyjamas like these", ".")
+  closing: blankMention("A name can be stitched onto the white chest of ", "plain 100% cotton pyjamas like these", ".")
 };
 
 const sublimationPage = {
