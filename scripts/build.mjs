@@ -36,7 +36,8 @@ const nav = [
       ["Poly-cotton blends", "/fabrics/poly-cotton/"],
       ["Nylon", "/fabrics/nylon/"],
       ["Children's clothing and pyjamas", "/fabrics/childrens-clothing/"],
-      ["Tote bags and canvas", "/fabrics/tote-bags/"]
+      ["Tote bags and canvas", "/fabrics/tote-bags/"],
+      ["Hoodies and sweatshirts", "/fabrics/hoodies/"]
     ]
   },
   {
@@ -412,7 +413,8 @@ function homePage() {
     ["/fabrics/poly-cotton/", "Poly-cotton"],
     ["/fabrics/nylon/", "Nylon"],
     ["/fabrics/childrens-clothing/", "Children's clothing"],
-    ["/fabrics/tote-bags/", "Tote bags"]
+    ["/fabrics/tote-bags/", "Tote bags"],
+    ["/fabrics/hoodies/", "Hoodies and sweatshirts"]
   ].map(([href, label]) => `<li><a href="${href}">${esc(label)}</a></li>`).join("");
 
   const fixLinks = [
@@ -508,6 +510,46 @@ function notFound() {
   });
 }
 
+function chartTemperatureTable() {
+  const guideFor = (record) => {
+    if (record.method === "dtf") return ["/methods/dtf/", "DTF"];
+    if (record.method === "sublimation") {
+      if (record.material === "mug") return ["/methods/sublimation-mugs/", "Mugs"];
+      if (["mdf", "metal", "slate", "acrylic"].includes(record.material)) return ["/methods/sublimation-hard-blanks/", "Hard blanks"];
+      return ["/methods/sublimation-polyester/", "Sublimation"];
+    }
+    if (record.vinyl === "glitter") return ["/methods/glitter-htv/", "Glitter HTV"];
+    if (record.vinyl === "flock") return ["/methods/flock-htv/", "Flock HTV"];
+    if (["stretch", "metallic", "holographic"].includes(record.vinyl)) return ["/methods/stretch-metallic-holographic-htv/", "Stretch, metallic, holo"];
+    return ["/methods/standard-htv/", "Standard HTV"];
+  };
+  const strict = (c) => c.split("–").map((part) => {
+    const value = Number(part) * 9 / 5 + 32;
+    return Number.isInteger(value) ? String(value) : value.toFixed(1);
+  }).join("–");
+  const seen = new Map();
+  for (const record of settings.records) {
+    for (const example of record.examples || []) {
+      if (!seen.has(example.name)) seen.set(example.name, { example, guide: guideFor(record) });
+    }
+  }
+  const rows = [...seen.values()]
+    .sort((a, b) => parseFloat(a.example.tempC) - parseFloat(b.example.tempC) || a.example.name.localeCompare(b.example.name))
+    .map(({ example, guide }) =>
+      `<tr><td>${esc(example.name)}</td><td>${esc(example.tempC)}°C</td><td>${esc(example.tempF)}°F</td><td>${esc(strict(example.tempC))}°F</td><td><a href="${guide[0]}">${esc(guide[1])}</a></td></tr>`
+    ).join("");
+  return `<h2>Every chart temperature on this site</h2>
+<p>These are the published examples behind the settings lookup, coolest first. “°F given” is the maker’s own printed figure when they print one, otherwise the usual conversion. “Exact” is Celsius × 9/5 + 32, so you can see where a sheet has rounded. Time, pressure and peel are on the guide page for each film.</p>
+<div class="table-wrap"><table>
+<thead><tr><th scope="col">Chart example</th><th scope="col">°C</th><th scope="col">°F given</th><th scope="col">Exact</th><th scope="col">Guide</th></tr></thead>
+<tbody>${rows}</tbody>
+</table></div>
+<p>The spread is wide for a reason. Low-temperature films such as Siser HI-5 and EcoStretch sit at 120°C for heat-sensitive fabric. Everyday PU vinyl clusters at 140–150°C. Glitter films sit at 160–170°C, and Siser Holographic at 160°C. Sublimation is a different process, at 180–205°C for much longer. A converter will not tell you which row you are on. The film or the blank does.</p>
+<h2>When your press only shows Fahrenheit</h2>
+<p>Some presses show only Fahrenheit, while Garment Films publish their UK chart in Celsius. Convert the chart figure once, write it on the film’s box, and keep that number. If a sheet prints its own Fahrenheit figure, use that one rather than your conversion. Siser’s 305°F for 150°C is the common example.</p>
+`;
+}
+
 function write(rel, html) {
   const dest = rel === "/" ? path.join(root, "index.html") : path.join(root, rel);
   fs.mkdirSync(path.dirname(dest), { recursive: true });
@@ -517,7 +559,8 @@ function write(rel, html) {
 const urls = [];
 for (const page of pages) {
   const rel = page.path.replace(/^\//, "") + "index.html";
-  write(rel, documentHtml(page));
+  const built = page.path === "/tools/temperature-converter/" ? { ...page, body: page.body + chartTemperatureTable() } : page;
+  write(rel, documentHtml(built));
   if (!page.robots) urls.push(origin + page.path);
 }
 write("index.html", homePage());
