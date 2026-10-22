@@ -29,7 +29,8 @@ export const fabricPages = [
       { href: "/pyjamas/htv/", label: "HTV on kids' pyjamas" },
       { href: "/pyjamas/sublimation/", label: "Why cotton pyjamas will not sublimate" },
       { href: "/fabrics/childrens-clothing/", label: "Children’s cotton clothes" },
-      { href: "/troubleshooting/vinyl-peeling/", label: "If the design lifts" }
+      { href: "/troubleshooting/vinyl-peeling/", label: "If the design lifts" },
+      { href: "/fabrics/hoodies/", label: "Hoodies and sweatshirts" }
     ],
     faqs: [
       { q: "Can I sublimate a white cotton shirt?", a: "No. Xpres state that sublimation only works on light-coloured polyester or polymer-coated items, and will not work on cotton. White cotton stays blank because the dye has nothing polyester to bond with." },
@@ -106,7 +107,8 @@ ${likedBlanks}
       { href: "/methods/standard-htv/", label: "Standard HTV" },
       { href: "/fabrics/polyester/", label: "Dye migration" },
       { href: "/methods/dtf/", label: "DTF on blends" },
-      { href: "/troubleshooting/faded-sublimation/", label: "Pale sublimation" }
+      { href: "/troubleshooting/faded-sublimation/", label: "Pale sublimation" },
+      { href: "/fabrics/hoodies/", label: "Blend hoodies and sweatshirts" }
     ],
     faqs: [
       { q: "Should I average the cotton and polyester temperatures?", a: "No. The HTV charts already include blends at the cotton figure. Inventing a midpoint is less accurate than following the film." },
@@ -259,6 +261,59 @@ ${craftBuddyNote("For a quick finish without cutting vinyl, a ", "small pack of 
 <p>Uneven pressure is the other miss. Sawgrass, writing about a polo with buttons and a collar, say the surface needs to be even and suggest a pressing pillow inside the shirt. A tote with a pocket or a hem in the design area has the same problem. Move the design onto the plain panel, or build the low side up so the platen meets the film everywhere.</p>
 <p>Coated canvas and leatherette bags are a different material. Garment Films say their HTV chart is not for coated fabrics. Use the bag maker’s instructions rather than the cotton row.</p>
 ${craftBuddyNote("If you want a little extra on a plain tote, ", "Craft Buddy’s iron-on motifs", " are small enough to sit beside a vinyl name. Follow the temperature on their pack.")}
+`
+  }
+  ,
+  {
+    path: "/fabrics/hoodies/",
+    title: "Heat press settings for hoodies and sweatshirts",
+    description: "Pressing HTV, DTF and sublimation on hoodies: the film's own chart, a pillow for the pocket seams, lower pressure, and Xpres hoodie figures in Celsius.",
+    kicker: "Fabric",
+    h1: "Hoodies and sweatshirts",
+    lede: "A hoodie does not need its own temperature for vinyl. It needs the right film for its fabric, a dry print area, and a way past the pocket, the seams and the hood.",
+    crumbs: [
+      { href: "/", label: "Home" },
+      { href: "/fabrics/hoodies/", label: "Hoodies and sweatshirts" }
+    ],
+    schema: "article",
+    sources: [
+      { label: "Siser, how to heat press a hoodie", url: "https://www.siserna.com/heat-press-hoodie/", note: "pillow under the front, seams off the platen, pressure turned down" },
+      { label: "Siser, heat transfer pillows", url: "https://www.siser.com/all-about-siser-heat-transfer-pillows/", note: "for seams, pockets, zips and drawstrings" },
+      { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/", note: "150°C (305°F), 10–15 seconds" },
+      { label: "Xpres, how to sublimate hoodies", url: "https://www.xpres.co.uk/how-to-sublimate-hoodies", note: "195°C for 60–70 seconds, hot peel" },
+      { label: "Xpres Vanilla raglan hoodie (VAN201)", url: "https://www.xpres.co.uk/vanilla-raglan-sublimation-hoodie", note: "65/35, 180°C for 90 seconds, light/medium" },
+      { label: "Xpres technical support, flock on fleeces", url: "https://www.xprestechnical.co.uk/support/solutions/articles/154000151254-how-do-i-apply-flock-to-fleeces-", note: "170°C for 25 seconds under a scrap of fleece" },
+      { label: "Xpres, how to DTF", url: "https://www.xpres.co.uk/direct-to-film-how-to-guide", note: "150–160°C for 10–15 seconds, medium" }
+    ],
+    related: [
+      { href: "/fabrics/poly-cotton/", label: "Poly-cotton blends" },
+      { href: "/fabrics/polyester/", label: "Dye migration on polyester" },
+      { href: "/methods/stretch-metallic-holographic-htv/", label: "Stretch HTV" },
+      { href: "/methods/dtf/", label: "DTF settings" },
+      { href: "/methods/sublimation-polyester/", label: "Sublimation on polyester" },
+      { href: "/troubleshooting/vinyl-peeling/", label: "If the design lifts" }
+    ],
+    faqs: [
+      { q: "Do hoodies need a higher temperature than T-shirts?", a: "Not for vinyl, on Siser’s advice. Their reply to a 50/50 hoodie question is that the regular settings for the type of HTV are fine. What changes is pressure: with a pillow inside, Siser turn the press pressure down so it still closes." },
+      { q: "Why did white vinyl go grey on a black sweatshirt?", a: "Siser’s answer to that exact question is dye migration from the polyester content, and their fix is EasyWeed Sub Block, which has a dye blocker. Pressing hotter than the sheet makes migration more likely, not less." },
+      { q: "How far below the neckline should the design go?", a: "Siser suggest about two to three fingers below the neckline for a front design. For a back print, place it low enough that the hood does not cover it when it is down." }
+    ],
+    body: `
+<p>Start with the label, not the word hoodie. Most are cotton, polyester or a blend, and the vinyl charts already cover those. Siser EasyWeed lists cotton, polyester and poly-cotton at 150°C (305°F) for 10–15 seconds, medium pressure, hot or cold peel. Asked about 50/50 hoodies, Siser say the regular settings for the HTV you are using are fine. Use the <a href="/fabrics/cotton/">cotton</a>, <a href="/fabrics/poly-cotton/">poly-cotton</a> or <a href="/fabrics/polyester/">polyester</a> page for your film.</p>
+<h2>Get past the seams</h2>
+<p>The kangaroo pocket is the usual reason a hoodie print lifts. Its stitched edges hold the top platen off the film, so the middle of the design never gets full pressure. Siser’s walkthrough puts a heat transfer pillow inside the hoodie for the front, so the print area sits higher than the pocket seams, and hangs the shoulder seams off the lower platen. With the pillow in, they turn the pressure down, or the press may not close.</p>
+<p>For the pocket itself, Siser slide the hoodie on until only the pocket is on the platen and put the pillow inside the pocket. Stacked mouse mats are their stand-in if you have no pillow. Their pillow guide lists zips, drawstrings, seams and pockets as the jobs pillows are for.</p>
+<p>The back has the fewest seams and usually needs no pillow. Keep the bottom hem off the platen for a lower-back print. Sleeves and the hood need a narrow pillow or pad, with the rest of the garment hanging off the press.</p>
+<h2>Thick fleece</h2>
+<p>Sweatshirt fleece and French terry hold more water than a thin tee. Pre-press the print area before you place the film, and lift the press to let any steam go. A <a href="/troubleshooting/vinyl-peeling/">lifting design</a> after the first wash is often moisture or pressure, not temperature.</p>
+<p>Flock on a fleece is a special case. Xpres technical support say to cover the whole pressed area with a scrap of fleece or a thin towel and press at 170°C for 25 seconds, light to medium. If the pile flattens, they brush it back up and say it looks normal after a wash. That is their flock transfer, not Siser StripFlock Pro, which has its own <a href="/methods/flock-htv/">155°C chart</a>.</p>
+<h2>Stretch and dye migration</h2>
+<p>A fitted hoodie stretches across the chest. Siser suggest EasyWeed Stretch rather than a stiffer flock when a design cracks along a line after a few washes. The <a href="/methods/stretch-metallic-holographic-htv/">stretch film page</a> has its settings.</p>
+<p>Dark polyester-rich hoodies can stain white or pale vinyl from underneath. Siser call that dye migration and point to EasyWeed Sub Block at 130°C (265°F). The <a href="/fabrics/polyester/">polyester page</a> explains it.</p>
+<h2>DTF and sublimation</h2>
+<p>For full colour on a cotton or dark hoodie, use <a href="/methods/dtf/">DTF</a>. Xpres give 150–160°C for 10–15 seconds at medium pressure, peel cold, then re-press. Check the sheet that came with your transfers. Hoodie-specific DTF notes, including the peel and second press, are on <a href="https://dtfsettings.co.uk/fabrics/hoodies/">DTF settings</a>.</p>
+<p>Sublimation only works on a light hoodie with enough polyester. Xpres press hoodies at 195°C for 60–70 seconds under a silicone sheet, with a Teflon pillow because of the front pocket, and peel the paper hot. Their 65% polyester Vanilla raglan hoodie lists 180°C for 90 seconds at light to medium pressure, which shows why the blank’s own label beats a general figure. Xpres say there is no white sublimation ink, so a dark hoodie will not work. More on the <a href="/methods/sublimation-polyester/">polyester sublimation page</a>.</p>
+<p>Need a temperature in Fahrenheit for an American sheet? Use the <a href="/tools/temperature-converter/">converter</a>.</p>
 `
   }
 ];

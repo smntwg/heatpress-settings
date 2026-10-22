@@ -427,7 +427,9 @@ export const methodPages = [
       { href: "/fabrics/polyester/", label: "Polyester" },
       { href: "/fabrics/tote-bags/", label: "Canvas totes" },
       { href: "/troubleshooting/vinyl-peeling/", label: "If the film lifts" },
-      { href: "/methods/sublimation-polyester/", label: "Sublimation instead, on polyester only" }
+      { href: "/methods/sublimation-polyester/", label: "Sublimation instead, on polyester only" },
+      { href: "/fabrics/hoodies/", label: "Hoodies and sweatshirts" },
+      { href: "https://dtfsettings.co.uk/", label: "DTF settings: peel types and fabric-by-fabric DTF rows" }
     ],
     steps: [
       { name: "Print, powder and cure before you press", text: "Xpres describe coating the wet ink with hot-melt powder and curing until it looks like orange peel. Their product sheet says 120°C for 3–5 minutes in their curing unit. Their later guide talks about 150–160°C for a few minutes. Use the sheet with your powder." },
