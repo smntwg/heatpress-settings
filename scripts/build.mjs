@@ -400,7 +400,7 @@ function homePage() {
     ["/methods/flock-htv/", "Flock HTV", "The velvety films. Peel warm or cool, not hot."],
     ["/methods/stretch-metallic-holographic-htv/", "Stretch, metallic, holographic", "Three families with different heats and peels, from 120°C EcoStretch to 160°C holographic."],
     ["/methods/sublimation-polyester/", "Sublimation on polyester", "Sawgrass at 205°C for 45 seconds, Xpres at 190°C for 60–70 seconds."],
-    ["/methods/sublimation-mugs/", "Sublimation on mugs", "Sawgrass ceramic mugs: 180–205°C for 150–300 seconds in a mug press."],
+    ["/methods/sublimation-mugs/", "Sublimation mug temperature and time", "11oz ceramic mugs at 180°C for 200 seconds (Xpres), polymer mugs, and the Sawgrass range."],
     ["/methods/sublimation-hard-blanks/", "Hard blanks", "Coated MDF, metal, slate and acrylic. Slate is minutes, not seconds."],
     ["/methods/dtf/", "DTF transfers", "Full colour on cotton. Published press ranges run from about 140°C to 160°C."]
   ].map(([href, title, text]) =>
@@ -567,9 +567,19 @@ write("index.html", homePage());
 urls.unshift(origin + "/");
 write("404.html", notFound());
 
+// Last real content change per page (default 2026-10-09, the launch build).
+const LASTMOD = {
+  "/": "2026-11-04",
+  "/methods/sublimation-mugs/": "2026-11-04",
+  "/methods/flock-htv/": "2026-11-04",
+  "/methods/glitter-htv/": "2026-11-04",
+  "/fabrics/hoodies/": "2026-10-22",
+  "/tools/temperature-converter/": "2026-10-22"
+};
+
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urls.map((url) => `  <url><loc>${url}</loc><lastmod>2026-10-09</lastmod></url>`).join("\n")}
+${urls.map((url) => `  <url><loc>${url}</loc><lastmod>${LASTMOD[url.slice(origin.length)] || "2026-10-09"}</lastmod></url>`).join("\n")}
 </urlset>
 `;
 fs.writeFileSync(path.join(root, "sitemap.xml"), sitemap);

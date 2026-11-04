@@ -108,16 +108,17 @@ export const methodPages = [
 </table>
 </div>
 <p>The EU Siser page also says glitter is layerable only as a top layer. If you are stacking colours, put glitter last and press it to its own instructions, not to the <a href="/methods/standard-htv/">everyday PU</a> time underneath.</p>
+<p>Glitter is thicker than everyday PU, so it suits a short name or an initial better than a long line. That is the usual festive job, such as a name on the white chest of <a href="/pyjamas/christmas/">Christmas pyjamas</a>.</p>
 <p>Garment Films’ Fahrenheit figures above are the usual conversion. They publish the chart in Celsius. Their Premium Glitter line is not the same product as printable glitter further down that PDF, which is listed at 160°C for 10–15 seconds with a warm peel. Read the row that matches the name on the roll.</p>
 <p>On <a href="/fabrics/cotton/">cotton</a> this heat is normal. On <a href="/fabrics/polyester/">polyester</a> it is the top end of what many shirts will accept without a shiny box around the design. Cover the garment. If you see scorch marks, stop and read the <a href="/troubleshooting/scorch-marks/">scorch guide</a> rather than pressing again hotter. Cotton pyjamas can use this cotton row. Placement on the white chest is on the <a href="/pyjamas/htv/">pyjama HTV page</a>.</p>
 `
   },
   {
     path: "/methods/flock-htv/",
-    title: "Flock HTV heat press settings in Celsius",
-    description: "Flock and StripFlock heat press settings: Siser at 155°C for 15 seconds, warm peel, and Garment Films flock at 150°C for 10 seconds, cool peel.",
+    title: "Flocked HTV heat press settings: Siser StripFlock (°C)",
+    description: "Flocked HTV heat press settings in Celsius: Siser StripFlock Pro at 155°C for 15 seconds, medium pressure, warm peel; Garment Films flock at 150°C for 10 seconds, cool peel.",
     kicker: "Method",
-    h1: "Flock HTV settings",
+    h1: "Flocked HTV heat press settings",
     lede: "Flock is the velvety film. On these charts the carrier comes off warm or cool. Peel it hot and the pile can lift or look bald in patches.",
     crumbs: [
       { href: "/", label: "Home" },
@@ -305,11 +306,11 @@ export const methodPages = [
   },
   {
     path: "/methods/sublimation-mugs/",
-    title: "Sublimation mug heat press settings in Celsius",
-    description: "Ceramic mug sublimation starting points from Sawgrass: 180–205°C for 150–300 seconds at medium pressure, in a mug press.",
+    title: "Sublimation mug temperature and time (°C): mug press guide",
+    description: "Mug sublimation temperature and time from Sawgrass and Xpres: 11oz ceramic at 180°C for 200 seconds, polymer mugs at 180°C for 180 seconds, plus cold-mug fixes.",
     kicker: "Method",
-    h1: "Sublimation on mugs",
-    lede: "A mug is not a T-shirt pressed on its side. Sawgrass publish a wide ceramic range because the blank and the mug press both change the result.",
+    h1: "Sublimation mug temperature and time",
+    lede: "A mug is not a T-shirt pressed on its side. Mugs need a mug press and minutes, not seconds. The published starting points are below, by blank, from Sawgrass and from Xpres in the UK.",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/methods/sublimation-mugs/", label: "Sublimation on mugs" }
@@ -317,6 +318,12 @@ export const methodPages = [
     schema: "howto",
     sources: [
       { label: "Sawgrass sublimation heat press settings", url: "https://care.sawgrassink.com/hc/en-us/articles/10587333978011-Sublimation-Heat-Press-Settings", note: "ceramic mug, 180–205°C, 150–300 seconds, medium" },
+      { label: "Xpres, how to sublimate mugs", url: "https://www.xpres.co.uk/how-to-sublimate-mugs", note: "standard mug element, 180°C, 200 seconds, medium; 180 seconds for a lot of black; peel hot" },
+      { label: "Xpres ORCA AAA 11oz sublimation mug", url: "https://www.xpres.co.uk/orca-coated-aaa-grade-11oz-sublimation-mug-pallet-25-boxes", note: "180°C, 200 seconds, medium, peel hot" },
+      { label: "Xpres 11oz polymer (plastic) mug", url: "https://www.xpres.co.uk/sublimation-11oz-polymer-mug", note: "180°C, 180 seconds, medium, peel hot" },
+      { label: "Xpres 12oz enamel cup", url: "https://www.xpres.co.uk/enamel-cup-with-stainless-silver-rim-12oz", note: "180°C, 180 seconds, light to medium" },
+      { label: "Xpres 10oz matte Durham mug", url: "https://www.xpres.co.uk/matte-finish-10oz-durham-mug-for-sublimation", note: "200°C, 180 seconds, light, release hot" },
+      { label: "Xpres Technical, environmental changes and mug printing", url: "https://www.xprestechnical.co.uk/support/solutions/articles/154000228258-how-environmental-changes-affect-sublimation-mug-printing", note: "cold mugs fade at the base; store 72 hours at room temperature" },
       { label: "Xpres, how to sublimate T-shirts", url: "https://www.xpres.co.uk/how-to-sublimate-t-shirts", note: "a mug needs a mug press" }
     ],
     related: [
@@ -329,28 +336,41 @@ export const methodPages = [
       { name: "Use a coated ceramic blank", text: "Ordinary glazed mugs from a supermarket are not sublimation blanks. The coating is what holds the dye." },
       { name: "Print mirrored and tape the wrap", text: "Tape the paper to the mug so it cannot slide. A loose wrap is the usual cause of a double image." },
       { name: "Use a mug press", text: "Xpres say a mug needs a mug press. A flat platen does not wrap the curve with even pressure." },
-      { name: "Start inside the Sawgrass range", text: "180–205°C (350–400°F), 150–300 seconds, medium pressure. If the blank maker prints a narrower card, use that and stay inside it." },
+      { name: "Press the row for your blank", text: "Use the card or product page for your mug first. Xpres 11oz ceramic is 180°C for 200 seconds at medium pressure. Without a card, start inside the Sawgrass ceramic range: 180–205°C (350–400°F), 150–300 seconds, medium." },
+      { name: "Peel hot", text: "Xpres say to take the mug out of the press and peel the paper while it is hot." },
       { name: "Unload with care", text: "The mug and the press are hot enough to burn. Follow the press manual for how to open it. Do not leave a hot mug where a child can pick it up." }
     ],
     faqs: [
+      { q: "What temperature do you sublimate a mug at?", a: "Xpres press their standard 11oz ceramic mugs at 180°C (356°F). Sawgrass give a ceramic mug range of 180–205°C (350–400°F). Some blanks differ: the Xpres 10oz matte Durham mug is listed at 200°C. Use the figure for your blank when there is one." },
+      { q: "How long do you press a sublimation mug?", a: "Minutes, not seconds. Xpres recommend 200 seconds for an 11oz ceramic mug at 180°C, or 180 seconds if the design has a lot of black. Sawgrass give 150–300 seconds for ceramic mugs." },
+      { q: "What temperature for a polymer (plastic) mug?", a: "Xpres list their 11oz polymer mug at 180°C for 180 seconds, medium pressure, peel hot. That is shorter than their ceramic mug. Sawgrass do not list polymer mugs, so follow the blank maker’s card." },
+      { q: "Why is the bottom of my mug faded in winter?", a: "Usually a cold mug. Xpres Technical say a mug stored somewhere cold takes longer to heat through, and fades first towards the base, where the ceramic is thicker. They suggest keeping mugs at room temperature for 72 hours before pressing, or warming the base first. A brown or orange patch in the middle is the opposite: too hot or too long." },
       { q: "Why is the time so wide?", a: "Sawgrass print 150–300 seconds, which is two and a half to five minutes, across 180–205°C. Element mugs, convection mug presses and thick ceramics do not finish together. Their chart is a starting place, and they tell you to ask the blank maker when the substrate is not listed." },
       { q: "Can I press a mug at the polyester T-shirt time?", a: "No. Sawgrass polyester fabric is 45 seconds. Their ceramic mug line is 150–300 seconds. A 45-second mug will look faded." },
       { q: "The handle side is pale. What failed?", a: "Usually pressure or contact, not a secret extra temperature. The paper has to touch the coating all the way round. Tape it, and check that the mug press closes evenly." }
     ],
     body: `
+<h2>Quick answer: mug sublimation temperature and time</h2>
 <div class="table-wrap">
 <table>
-  <caption>Sawgrass ceramic mug example</caption>
-  <thead><tr><th>Blank</th><th>Temperature</th><th>Time</th><th>Pressure</th></tr></thead>
+  <caption>Published mug examples, by blank. Celsius as published; Fahrenheit in brackets.</caption>
+  <thead><tr><th>Blank and source</th><th>Temperature</th><th>Time</th><th>Pressure</th><th>Peel</th></tr></thead>
   <tbody>
-    <tr><td>Ceramic mug</td><td>180–205°C (350–400°F)</td><td>150–300 seconds</td><td>Medium</td></tr>
+    <tr><td>11oz ceramic mug, Xpres guide and ORCA AAA mug</td><td>180°C (356°F)</td><td>200 seconds (180 if the design has a lot of black)</td><td>Medium</td><td>Hot</td></tr>
+    <tr><td>Ceramic mug, Sawgrass chart</td><td>180–205°C (350–400°F)</td><td>150–300 seconds</td><td>Medium</td><td>Not listed</td></tr>
+    <tr><td>11oz polymer (plastic) mug, Xpres</td><td>180°C (356°F)</td><td>180 seconds</td><td>Medium</td><td>Hot</td></tr>
+    <tr><td>12oz enamel cup, Xpres</td><td>180°C (356°F)</td><td>180 seconds</td><td>Light to medium</td><td>Not listed</td></tr>
+    <tr><td>10oz matte Durham mug, Xpres</td><td>200°C (392°F)</td><td>180 seconds</td><td>Light</td><td>Hot</td></tr>
   </tbody>
 </table>
 </div>
-<p>That is the whole published mug line from the Sawgrass chart this site uses. This site does not fill the gap with a single “best” minute, because Sawgrass did not print one. A test mug, cut in half by time, tells you more than another blog average.</p>
-<p>Colour on the paper is not the finished colour. The same Xpres note that applies to shirts applies here: sublimation ink often looks stronger after it is heated. Judge a pressed mug, not the printout.</p>
+<p>All of these are in a mug press. Xpres use their standard mug element for the 11oz ceramic, polymer and enamel mugs above. Fahrenheit next to the Xpres figures is a conversion, because Xpres publish Celsius only. 350–400°F is what Sawgrass print.</p>
+<p>If your mug came with a card, that card wins. The Sawgrass line is a wide range because element presses, convection presses and thick ceramics do not finish together. This site does not fill the gap with a single “best” minute where a maker did not print one. A test mug tells you more than another blog average.</p>
+<h2>Cold mugs, faded bases</h2>
+<p>Mugs stored in a cold garage or a van behave differently in winter. Xpres Technical give the example of a mug stored at 5°C taking longer to heat through than one at 25°C. The result is fading, often in dark areas and towards the base, where the ceramic is thicker. Their fix is to keep stock at room temperature for 72 hours before pressing, or to warm the base of the mug first. A brown or orange mark in the middle of the print is the other way round: too hot, too long, or a mug that was already warm.</p>
+<p>Colour on the paper is not the finished colour. Xpres say sublimation ink often looks stronger after it is heated. Judge a pressed mug, not the printout.</p>
 <p>Ghosting on a mug is a shifted wrap. Tape the edges, close the press smoothly, and open it without spinning the mug against the paper. The <a href="/troubleshooting/sublimation-ghosting/">ghosting guide</a> covers fabric and hard surfaces. A weak image is more often time, temperature or a missing coating, which is the <a href="/troubleshooting/faded-sublimation/">faded sublimation</a> list.</p>
-<p>Stainless travel cups and latte glasses are different blanks. They are not this ceramic row. If Sawgrass do not list your blank, use the card that came with it.</p>
+<p>Stainless travel cups and latte glasses are different blanks again. They are not these rows. If neither chart lists your blank, use the card that came with it. Flat coated blanks such as MDF, metal and slate are on the <a href="/methods/sublimation-hard-blanks/">hard blanks page</a>.</p>
 `
   },
   {
