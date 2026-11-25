@@ -3,7 +3,6 @@ import path from "node:path";
 import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 import { pages } from "./pages.mjs";
-import { affiliatePageLine } from "./affiliates.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://heatpress-settings.co.uk";
@@ -334,8 +333,7 @@ function documentHtml(page) {
       <header class="page-intro">
         <p class="kicker">${esc(page.kicker)}</p>
         <h1>${esc(page.h1)}</h1>
-        <p class="lede">${esc(page.lede)}</p>${page.affiliateDisclosure ? `
-        ${affiliatePageLine()}` : ""}
+        <p class="lede">${esc(page.lede)}</p>
       </header>
       <div class="prose">
         <aside class="notice"><p>${esc(page.notice || "These are starting points from the charts named below. Read the instructions for the product you are pressing, then test on a scrap or a spare blank. The number on a heat press dial is often not the true platen temperature.")}</p></aside>
@@ -571,10 +569,17 @@ write("404.html", notFound());
 const LASTMOD = {
   "/": "2026-11-04",
   "/methods/sublimation-mugs/": "2026-11-04",
+  "/methods/sublimation-polyester/": "2026-11-25",
   "/methods/flock-htv/": "2026-11-04",
   "/methods/glitter-htv/": "2026-11-04",
+  "/fabrics/polyester/": "2026-11-25",
+  "/fabrics/childrens-clothing/": "2026-11-25",
+  "/fabrics/tote-bags/": "2026-11-25",
   "/fabrics/hoodies/": "2026-10-22",
-  "/tools/temperature-converter/": "2026-10-22"
+  "/pyjamas/size-guide/": "2026-11-25",
+  "/tools/temperature-converter/": "2026-10-22",
+  "/about/": "2026-11-25",
+  "/privacy/": "2026-11-25"
 };
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>

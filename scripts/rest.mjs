@@ -303,7 +303,7 @@ export const restPages = [
     ],
     related: [
       { href: "/", label: "Settings lookup" },
-      { href: "/privacy/", label: "Privacy and affiliates" },
+      { href: "/privacy/", label: "Privacy" },
       { href: "/contact/", label: "Contact" }
     ],
     body: `
@@ -319,12 +319,12 @@ export const restPages = [
   },
   {
     path: "/privacy/",
-    title: "Privacy policy, cookies and affiliate disclosure",
+    title: "Privacy policy and cookies",
     description: "UK GDPR privacy notice for heatpress-settings.co.uk: what the site collects, cookies, advertising and the example Amazon pyjama link.",
     kicker: "Privacy",
     h1: "Privacy policy",
-    lede: "This notice explains what heatpress-settings.co.uk does with personal information. It was updated on 18 October 2026.",
-    modified: "2026-10-18",
+    lede: "This notice explains what heatpress-settings.co.uk does with personal information. It was updated on 25 November 2026.",
+    modified: "2026-11-25",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/privacy/", label: "Privacy" }
@@ -346,10 +346,9 @@ export const restPages = [
 <p>The emails are sent through Resend (resend.com), which processes your address on our behalf in order to deliver them. The sign-up record is kept as an email in our own inbox, not in a separate database. We keep it until you unsubscribe, and we do not sell or share the list.</p>
 <h2>Cookies</h2>
 <p>This version of the site does not set its own cookies. It does not load analytics, and it does not load advertising scripts. If that changes, this policy will be updated first, and any non-essential cookies will wait for a proper choice under the Privacy and Electronic Communications Regulations and UK GDPR.</p>
-<h2>Advertising and affiliate links</h2>
+<h2>Advertising</h2>
 <p>You may see a marked box that says the space is reserved for a future advert. Nothing is loaded in that box. There is no AdSense code and no ads.txt file yet.</p>
 <p>The cotton page, the children’s clothing page and the pyjama guides each show a plain set and a patterned set, and those photos and the sentence beside them link to the same Amazon UK page for that range. Nothing is added to the address to track a commission.</p>
-<p>The children’s clothing and tote bag pages each include one affiliate link to Craft Buddy Shop, through the Awin network, and carry the line “This page contains affiliate links.” near the top. If you buy through it, we may earn a small commission at no extra cost to you. Awin may set its own tracking cookie once you click through to the shop; see <a href="https://www.awin.com/gb/privacy" rel="noopener noreferrer">awin.com/gb/privacy</a>. This does not change which settings we publish. Any other affiliate links or adverts will be labelled the same way before they go live.</p>
 <h2>How long we keep email</h2>
 <p>We keep correspondence for as long as we need it to handle your question and any follow-up, and then delete it. Hosting logs are kept on the host’s schedule, not ours.</p>
 <h2>Your rights</h2>

@@ -689,8 +689,3 @@ table.compact { min-width: 0; }
 .signup-status { min-height: 1.2em; font-weight: 600; }
 .signup .fine { font-size: 0.85rem; color: var(--muted); }
 .signup .fine a { color: var(--heat-deep); }
-.affiliate-note {
-  font-size: 0.85rem;
-  color: var(--muted);
-  margin: 0.35rem 0 0;
-}
