@@ -17,7 +17,7 @@ export const fabricPages = [
     ],
     schema: "article",
     sources: [
-      { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/", note: "lists 100% cotton at 150°C" },
+      { label: "Siser EasyWeed", url: "https://siserstore.com/pages/easyweed", note: "lists 100% cotton at 150°C" },
       { label: "Garment Films application guidelines (PDF)", url: "https://www.garmentfilms.co.uk/downloads/645cf2144e810192Application_Guidelines_new.pdf", note: "cotton is on the suitable-fabric list" },
       { label: "Xpres, how to sublimate T-shirts", url: "https://www.xpres.co.uk/how-to-sublimate-t-shirts", note: "sublimation will not work on cotton" },
       { label: "Xpres, how to DTF", url: "https://www.xpres.co.uk/direct-to-film-how-to-guide", note: "DTF on cotton" }
@@ -50,6 +50,7 @@ ${likedBlanks}
     kicker: "Fabric",
     h1: "Heat pressing polyester",
     lede: "Polyester does not have one heat press temperature. Everyday HTV, DTF and sublimation are published at different heats, and this is the fabric most likely to shine or bleed dye.",
+    modified: "2026-11-25",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/fabrics/polyester/", label: "Polyester" }
@@ -75,7 +76,7 @@ ${likedBlanks}
     ],
     faqs: [
       { q: "What temperature do you heat press polyester at?", a: "It depends on the transfer. Siser EasyWeed, which lists 100% polyester, is 150°C for 15 seconds at medium pressure. Xpres press DTF, which they describe for cotton, poly and blends, at 150–160°C for 10–15 seconds. Sublimation is hotter: Sawgrass list polyester fabric at 205°C (400°F) for 45 seconds, and Xpres press polyester T-shirts at 190°C for 60–70 seconds." },
-      { q: "Why is there a shiny box around the design?", a: "The polyester has glazed. Siser’s heat-sensitive advice is a cover sheet, a test on an inside seam, and HI-5 at 120°C for 5 seconds on textiles under 150 g/m², or 150°C for 5 seconds when the textile is heavier. Their article says the shine is sometimes temporary and sometimes permanent." },
+      { q: "Why is there a shiny box around the design?", a: "The polyester has glazed. Siser’s heat-sensitive advice is a cover sheet, a test press on a hidden area, such as inside the back, and HI-5 at 120°C for 5 seconds on textiles under 150 g/m², or 150°C for 5 seconds when the textile is heavier. Their article says the shine is sometimes temporary and sometimes permanent." },
       { q: "Why did the white vinyl change colour?", a: "That is dye migration. Siser say high temperature and high pressure make dye in polyester move into the film. Their Sub Block product page is 135°C for 15 seconds at medium pressure. A North America Siser note prints 265°F / 130°C at medium pressure and does not state a time." }
     ],
     body: `
@@ -97,11 +98,11 @@ ${likedBlanks}
 <h2>Heat transfer vinyl</h2>
 <p>Siser’s P.S. Film EasyWeed page lists 100% polyester with 100% cotton and poly/cotton blends, all at 150°C for 15 seconds, medium pressure, carrier off hot or cold. The blend line adds “not for dye sublimated fabrics.” Other films publish other heats. Match the roll on the <a href="/methods/standard-htv/">standard HTV</a> page, and keep a hotter film on the heat that film publishes.</p>
 <h2>Scorch and shiny marks</h2>
-<p>A shiny rectangle is the polyester. Siser’s heat-sensitive article names 100% polyester, and also rayon, silk and anything you are unsure about. They say discolouration is sometimes temporary and sometimes permanent, and they tell you to test an inside seam when the care label says cool iron or do not iron. Their cover is a heat-transfer cover sheet, or parchment, or the shiny side of multipurpose paper.</p>
+<p>A shiny rectangle is the polyester. Siser’s heat-sensitive article names 100% polyester, and also rayon, silk and anything you are unsure about. They say discolouration is sometimes temporary and sometimes permanent, and they tell you to test press a hidden area, such as the inside of the back when the care label says cool iron or do not iron. Their cover is a heat-transfer cover sheet, or parchment, or the shiny side of multipurpose paper.</p>
 <p>The lower temperature they publish for this problem is HI-5. The article gives 120°C for 5 seconds, and says that avoids shine and fibre damage on the most common polyester-based fabric. The HI-5 product page splits it by weight: textiles under 150 g/m² at 120°C, heavier textiles at 150°C, both for 5 seconds at high pressure (4/5 bar on the page, about 4–5 bar), carrier off hot or cold.</p>
 <p>When the film is something else, Siser say you can lower the temperature and raise the time. The only worked example on that page is StripFlock Pro: normally 15 seconds at 155°C, or 25–30 seconds and not below 140°C. That alternative belongs to StripFlock Pro. The <a href="/troubleshooting/scorch-marks/">scorch marks</a> page has the same notes.</p>
 <h2>Dye migration</h2>
-<p>Light vinyl on a dark or sublimated polyester can shift colour after the press. Siser’s dye-migration note says the dye in the shirt moves when it is heated. They see it most on sublimated polyester, and also on ordinary polyester. High temperature and high pressure are a major cause. The shift shows on light film. A dark film can hide it until another colour goes on top.</p>
+<p>Light vinyl on a dark or sublimated polyester can shift colour after the press. Siser’s dye-migration note says the dye in the shirt moves when it is heated. They see it most on sublimated polyester, and also on ordinary polyester. High temperature and high pressure are a major cause. The shift shows on light film. Siser say it only shows when light-coloured vinyl goes on a darker polyester.</p>
 <p>The current Siser product page for P.S. Subli LT (EasyWeed Sub Block) is the blocker chart: 135°C for 15 seconds, medium pressure (3/4 bar), carrier off hot or cold, for dye-sublimated polyester. Their North America note still prints 265°F / 130°C at medium pressure, and that page does not give a time. Follow the sheet in the box when the two disagree. Everyday vinyl settings stay on the <a href="/methods/standard-htv/">standard HTV</a> page.</p>
 <h2>DTF</h2>
 <p>Xpres describe DTF for cotton, poly and blends, and they do not print a separate polyester temperature. Their how-to presses at 150–160°C for 10–15 seconds, medium pressure, peel cold, then a second press under a silicone sheet. They say heavier cotton may need a slightly higher temperature, and they do not give that new number. Their information sheet, which also does not split fabrics, is 160°C for 15 seconds, light to medium, cold peel off the platen, then another 15 seconds. Use the sheet that came with the film. A shiny halo around the design is the scorch described above. Cover the shirt. The full steps are on the <a href="/methods/dtf/">DTF page</a>.</p>
@@ -122,7 +123,7 @@ ${likedBlanks}
     ],
     schema: "article",
     sources: [
-      { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/", note: "lists poly-cotton at the cotton settings" },
+      { label: "Siser EasyWeed", url: "https://siserstore.com/pages/easyweed", note: "lists poly-cotton at the cotton settings" },
       { label: "Garment Films application guidelines (PDF)", url: "https://www.garmentfilms.co.uk/downloads/645cf2144e810192Application_Guidelines_new.pdf", note: "polyester/cotton mixtures" },
       { label: "Xpres, how to sublimate T-shirts", url: "https://www.xpres.co.uk/how-to-sublimate-t-shirts", note: "polyester or a polymer coating, not cotton" },
       { label: "Xpres, how to DTF", url: "https://www.xpres.co.uk/direct-to-film-how-to-guide", note: "DTF on blends" }
@@ -201,6 +202,7 @@ ${likedBlanks}
     kicker: "Fabric",
     h1: "Children's clothing and pyjamas",
     lede: "Press the fabric that is actually in the garment, then respect the care label. Babywear and cool-iron polyester are not a normal cotton T-shirt.",
+    modified: "2026-11-25",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/fabrics/childrens-clothing/", label: "Children's clothing" }
@@ -253,13 +255,14 @@ ${likedBlanks}
     kicker: "Fabric",
     h1: "Tote bags and canvas",
     lede: "A cotton tote is a thick cotton panel with seams in the way. These charts do not give canvas its own temperature. They do tell you how to press cotton.",
+    modified: "2026-11-25",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/fabrics/tote-bags/", label: "Tote bags and canvas" }
     ],
     schema: "article",
     sources: [
-      { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/", note: "cotton settings used for uncoated cotton canvas" },
+      { label: "Siser EasyWeed", url: "https://siserstore.com/pages/easyweed", note: "cotton settings used for uncoated cotton canvas" },
       { label: "Garment Films application guidelines (PDF)", url: "https://www.garmentfilms.co.uk/downloads/645cf2144e810192Application_Guidelines_new.pdf", note: "suitable for cotton; not for coated fabrics" },
       { label: "Xpres, how to sublimate T-shirts", url: "https://www.xpres.co.uk/how-to-sublimate-t-shirts", note: "cotton will not sublimate" },
       { label: "Xpres DTF information sheet (PDF)", url: "https://www.xpres.co.uk/globalassets/xpres/downloads/xp2763/dtf-information-sheet.pdf", note: "thread the item on the press where you can" },
@@ -299,7 +302,7 @@ ${likedBlanks}
     sources: [
       { label: "Siser, how to heat press a hoodie", url: "https://www.siserna.com/heat-press-hoodie/", note: "pillow under the front, seams off the platen, pressure turned down" },
       { label: "Siser, heat transfer pillows", url: "https://www.siser.com/all-about-siser-heat-transfer-pillows/", note: "for seams, pockets, zips and drawstrings" },
-      { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/", note: "150°C (305°F), 10–15 seconds" },
+      { label: "Siser EasyWeed", url: "https://siserstore.com/pages/easyweed", note: "150°C (305°F), 10–15 seconds" },
       { label: "Xpres, how to sublimate hoodies", url: "https://www.xpres.co.uk/how-to-sublimate-hoodies", note: "195°C for 60–70 seconds, hot peel" },
       { label: "Xpres Vanilla raglan hoodie (VAN201)", url: "https://www.xpres.co.uk/vanilla-raglan-sublimation-hoodie", note: "65/35, 180°C for 90 seconds, light/medium" },
       { label: "Xpres technical support, flock on fleeces", url: "https://www.xprestechnical.co.uk/support/solutions/articles/154000151254-how-do-i-apply-flock-to-fleeces-", note: "170°C for 25 seconds under a scrap of fleece" },

@@ -254,7 +254,7 @@ function graphFor(page, canonical) {
       "@type": page.schema === "about" ? "AboutPage" : "Article",
       headline: page.h1,
       description: page.description,
-      dateModified: "2026-10-07",
+      dateModified: page.modified || "2026-10-07",
       inLanguage: "en-GB",
       mainEntityOfPage: canonical,
       author: { "@type": "Organization", name: "Heat press settings" }

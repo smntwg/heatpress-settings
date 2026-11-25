@@ -14,7 +14,7 @@ export const restPages = [
     ],
     schema: "article",
     sources: [
-      { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/", note: "if it lifts, cover and press 5–10 seconds" },
+      { label: "Siser EasyWeed", url: "https://siserstore.com/pages/easyweed", note: "if it lifts, cover and press 5–10 seconds" },
       { label: "Siser HTV application instructions (PDF)", url: "https://uscutter.com/content/PDFs/Siser-heat-transfer-vinyl-instructions-2024.pdf", note: "peel type and a 24-hour wait" },
       { label: "Garment Films application guidelines (PDF)", url: "https://www.garmentfilms.co.uk/downloads/645cf2144e810192Application_Guidelines_new.pdf", note: "wait 24 hours, no fabric conditioner" },
       { label: "Garment Films FAQ", url: "https://garmentfilms.com/pages/faqs", note: "pre-press 5–10 seconds for moisture" },
@@ -181,7 +181,7 @@ export const restPages = [
     ogType: "website",
     scripts: ["/js/converter.js"],
     sources: [
-      { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/", note: "prints 305°F beside 150°C" },
+      { label: "Siser EasyWeed", url: "https://siserstore.com/pages/easyweed", note: "prints 305°F beside 150°C" },
       { label: "Sawgrass sublimation heat press settings", url: "https://care.sawgrassink.com/hc/en-us/articles/10587333978011-Sublimation-Heat-Press-Settings", note: "prints 400°F beside 205°C" }
     ],
     related: [
@@ -289,13 +289,14 @@ export const restPages = [
     kicker: "About",
     h1: "About this guide",
     lede: "A UK reference for hobby and small-batch pressing. Celsius first, Fahrenheit in brackets, and a named source on every setting.",
+    modified: "2026-11-25",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/about/", label: "About" }
     ],
     schema: "about",
     sources: [
-      { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/" },
+      { label: "Siser EasyWeed", url: "https://siserstore.com/pages/easyweed" },
       { label: "Siser heat-sensitive textiles", url: "https://www.siser.com/news/how-to-prevent-discoloring-and-scorching-heat-sensitive-textiles/" },
       { label: "Garment Films application guidelines (PDF)", url: "https://www.garmentfilms.co.uk/downloads/645cf2144e810192Application_Guidelines_new.pdf" },
       { label: "Xpres sublimation and DTF guides", url: "https://www.xpres.co.uk/how-to-sublimate-t-shirts" },
@@ -314,7 +315,7 @@ export const restPages = [
 <h2>What this site will not do</h2>
 <p>It does not invent a brand setting it cannot point at. If a film does not list nylon, the lookup says so instead of offering the cotton number with a shrug. If a chart has no pressure, the card says the pressure is not listed.</p>
 <p>Nothing here is a promise that your press will match. Dials lie by enough degrees to matter. Siser’s published example is the EasyPress note on EasyWeed: add about 30°, written beside 305°F/150°C and read as 30°F rather than 30°C. Test on a scrap or a spare blank.</p>
-<p>The guides were checked against those sources on 7 October 2026. Makers revise sheets. If a product page and this site diverge, believe the product page, and <a href="/contact/">send a correction</a>.</p>
+<p>The guides were checked against those sources on 7 October 2026 and the polyester and sublimation pages again on 25 November 2026. Makers revise sheets. If a product page and this site diverge, believe the product page, and <a href="/contact/">send a correction</a>.</p>
 `
   },
   {
@@ -345,7 +346,7 @@ export const restPages = [
 <p>If you ask for the free printable cheat sheet, we collect only the email address you type in, plus the page you signed up on and the time. We use it to email you the link to the PDF and, occasionally, news about this site. The lawful basis is your consent, which you can withdraw at any time: reply “unsubscribe” to any of our emails, or email <a href="mailto:hello@heatpress-settings.co.uk">hello@heatpress-settings.co.uk</a>, and we will delete your address.</p>
 <p>The emails are sent through Resend (resend.com), which processes your address on our behalf in order to deliver them. The sign-up record is kept as an email in our own inbox, not in a separate database. We keep it until you unsubscribe, and we do not sell or share the list.</p>
 <h2>Cookies</h2>
-<p>This version of the site does not set its own cookies. It does not load analytics, and it does not load advertising scripts. If that changes, this policy will be updated first, and any non-essential cookies will wait for a proper choice under the Privacy and Electronic Communications Regulations and UK GDPR.</p>
+<p>This version of the site does not set its own cookies and does not load advertising scripts. It uses Cloudflare Web Analytics, a cookie-free visit counter provided by our host, which records page views, referrer, browser type and country without cookies and without building a profile of you. See cloudflare.com/privacypolicy. If that changes, this policy will be updated first, and any non-essential cookies will wait for a proper choice under the Privacy and Electronic Communications Regulations and UK GDPR.</p>
 <h2>Advertising</h2>
 <p>You may see a marked box that says the space is reserved for a future advert. Nothing is loaded in that box. There is no AdSense code and no ads.txt file yet.</p>
 <p>The cotton page, the children’s clothing page and the pyjama guides each show a plain set and a patterned set, and those photos and the sentence beside them link to the same Amazon UK page for that range. Nothing is added to the address to track a commission.</p>

@@ -16,7 +16,7 @@
     peel: "Hot or cold",
     detail: "Preheat the garment for 2–3 seconds and cover the design. If a section lifts, cover it and press again for 5–10 seconds. Siser say EasyPress users should add about 30°. The note sits beside 305°F/150°C and is read as 30°F, not an extra 30°C. It applies to the EasyPress, not to every machine.",
     sourceLabel: "Siser EasyWeed",
-    sourceUrl: "https://www.siserna.com/easyweed/"
+    sourceUrl: "https://siserstore.com/pages/easyweed"
   };
 
   var oneFlex = {
