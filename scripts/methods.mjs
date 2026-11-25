@@ -248,11 +248,11 @@ export const methodPages = [
   },
   {
     path: "/methods/sublimation-polyester/",
-    title: "Sublimation on polyester: heat press settings in Celsius",
-    description: "Polyester sublimation starting points from Sawgrass (205°C, 45 seconds) and Xpres (190°C, 60–70 seconds), plus why cotton will not work.",
+    title: "Sublimation on polyester fabric: heat press settings",
+    description: "Sublimation on polyester fabric in Celsius: Sawgrass at 205°C for 45 seconds, Xpres at 190°C for 60–70 seconds, with 100%, 65% and 50% polyester notes and a ghosting fix.",
     kicker: "Method",
     h1: "Sublimation on polyester fabric",
-    lede: "Sublimation dye turns to gas and bonds with polyester. It does not sit on the shirt like vinyl. Sawgrass and Xpres publish different time and temperature pairs for that job.",
+    lede: "Sublimation dye turns to gas and bonds with polyester. Sawgrass and Xpres publish different time and temperature pairs for that job, and they also say how much polyester the shirt needs.",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/methods/sublimation-polyester/", label: "Sublimation on polyester" }
@@ -260,12 +260,15 @@ export const methodPages = [
     schema: "howto",
     sources: [
       { label: "Sawgrass sublimation heat press settings", url: "https://care.sawgrassink.com/hc/en-us/articles/10587333978011-Sublimation-Heat-Press-Settings", note: "polyester fabric, 205°C / 400°F, 45 seconds, medium" },
-      { label: "Sawgrass polo shirt walkthrough", url: "https://www.sawgrassink.com/blog/how-we-made-it-polo-shirt/", note: "400°F (204°C), 45 seconds, high pressure" },
-      { label: "Xpres, how to sublimate T-shirts", url: "https://www.xpres.co.uk/how-to-sublimate-t-shirts", note: "190°C, 60–70 seconds, medium, peel hot" }
+      { label: "Sawgrass polo shirt walkthrough", url: "https://www.sawgrassink.com/blog/how-we-made-it-polo-shirt/", note: "VersiFlex and TruePix, 400°F (204°C), 45 seconds, high pressure" },
+      { label: "Sawgrass, which ink to choose", url: "https://care.sawgrassink.com/hc/en-us/articles/10621395809435-Ink-Sets-Which-One-to-Choose", note: "SubliJet UHD works best with white 100% polyester or polycotton 65/35" },
+      { label: "Xpres, how to sublimate T-shirts", url: "https://www.xpres.co.uk/how-to-sublimate-t-shirts", note: "190°C, 60–70 seconds, medium, peel hot; light polyester only" },
+      { label: "Xpres beginner sublimation guide (PDF)", url: "https://www.xpres.co.uk/globalassets/xpres/ebooks/ultimate-beginner-sublimation-guide.pdf", note: "at least 65% polyester; untaped paper can ghost" },
+      { label: "Xpres sublimation clothing", url: "https://www.xpres.co.uk/sublimation-clothing", note: "50/50 can be pressed, with a less vibrant result than 100% polyester" }
     ],
     related: [
-      { href: "/fabrics/polyester/", label: "Polyester fabric" },
-      { href: "/fabrics/poly-cotton/", label: "Why blends look pale" },
+      { href: "/fabrics/polyester/", label: "Heat pressing polyester" },
+      { href: "/fabrics/poly-cotton/", label: "Poly-cotton blends" },
       { href: "/fabrics/cotton/", label: "Cotton will not sublimate" },
       { href: "/pyjamas/sublimation/", label: "Cotton pyjamas" },
       { href: "/troubleshooting/sublimation-ghosting/", label: "Ghosting and blur" },
@@ -274,34 +277,45 @@ export const methodPages = [
     ],
     steps: [
       { name: "Print mirrored on sublimation paper", text: "Xpres say to mirror the artwork. Use sublimation ink and paper, not a normal inkjet print." },
-      { name: "Use a light polyester blank", text: "Xpres say the process needs light-coloured polyester or a polymer coating. It will not work on cotton or on dark garments, because there is no white ink." },
-      { name: "Tape the paper and cover it", text: "Xpres: tape the print face down, thread the shirt on the press, and cover it with a silicone sheet." },
-      { name: "Press one published pair", text: "Sawgrass polyester fabric is 205°C (400°F) for 45 seconds at medium pressure. Xpres is 190°C for 60–70 seconds at medium pressure. Do not mix 205°C with a 70-second dwell unless a test shows you need it." },
-      { name: "Peel hot, on the Xpres method", text: "Xpres say to remove the silicone sheet and peel while hot. Sawgrass’s polo note says to remove the shirt from the press and then remove the paper." }
+      { name: "Use a light shirt with enough polyester", text: "Xpres say the process needs light-coloured polyester or a polymer coating, and that dark garments and cotton will not work because there is no white ink. Their beginner guide asks for at least 65% polyester. Sawgrass say SubliJet UHD works best on white 100% polyester or a 65/35 polycotton." },
+      { name: "Pre-press, tape the paper and cover it", text: "Xpres say to pre-press fabric to clear moisture and creases, tape the print face down, thread the shirt on the press, and cover it with a silicone sheet. Their beginner guide says untaped paper can ghost or blur." },
+      { name: "Press one published pair", text: "Sawgrass polyester fabric is 205°C (400°F) for 45 seconds at medium pressure. Their VersiFlex polo walkthrough is 400°F (204°C) for 45 seconds at high pressure. Xpres T-shirts are 190°C for 60–70 seconds at medium pressure." },
+      { name: "Peel the way that guide says", text: "Xpres say to remove the silicone sheet and peel while hot. Sawgrass’s polo note says to remove the shirt from the press and then remove the paper. The Sawgrass fabric chart does not list a peel." }
     ],
     faqs: [
-      { q: "Which polyester setting should I start with?", a: "If you use Sawgrass inks and TruePix-style paper, start from their chart: 205°C for 45 seconds, medium. If you are following Xpres’s UK T-shirt guide, start at 190°C for 60–70 seconds, medium. Then change one thing at a time on a spare shirt." },
-      { q: "Why is my poly-cotton print speckled?", a: "Only polyester fibres take the dye. Cotton fibres stay the original colour, so a blend looks pale or heathered. There is no separate blend temperature on these charts." },
+      { q: "What temperature and time for sublimation on polyester fabric?", a: "Sawgrass list polyester fabric at 205°C (400°F) for 45 seconds, medium pressure. Xpres press polyester T-shirts at 190°C for 60–70 seconds, medium pressure, and peel hot. A Sawgrass polo walkthrough that uses VersiFlex ink sets 400°F (204°C) for 45 seconds at high pressure. Start from the pair that matches your ink and paper, on a spare shirt." },
+      { q: "Do I need 100% polyester, or will 65% or 50% do?", a: "Sawgrass say SubliJet UHD works best with white 100% polyester or polycotton (65/35), and they do not print a separate temperature for the blend. Xpres’s beginner guide says the fabric must be at least 65% polyester, or polyester-coated. Their clothing page says a 50/50 can be pressed, with a less vibrant and less permanent result, because the dye only binds to the polyester fibres. None of those pages gives 50% or 65% its own time and temperature." },
+      { q: "Does the fabric have to be white?", a: "It has to be light. Xpres say light-coloured polyester or a polymer coating, and that dark garments will not work because there is no white sublimation ink. Sawgrass describe SubliJet UHD as the ink for white or light coloured substrates, and they name white 100% polyester. White cotton is still cotton." },
+      { q: "Why is there ghosting on the paper?", a: "Xpres’s beginner guide says a print that is not fixed with heat tape can ghost or blur. Tape the edges, pre-press the shirt so it is dry and flat, and peel the way your guide says. A line the shape of the paper edge is a different mark: Sawgrass say tearing the paper edge so it feathers avoids it." },
       { q: "The paper print looks dull. Is the press too cool?", a: "Not always. Xpres say sublimation ink often changes colour when it is heated and can look brighter on the shirt than on the paper. Press a test before you reprint the whole run." }
     ],
     body: `
+<h2>Quick answer</h2>
 <div class="table-wrap">
 <table>
-  <caption>Published polyester fabric examples</caption>
+  <caption>Published settings for sublimation on polyester fabric</caption>
   <thead><tr><th>Source</th><th>Temperature</th><th>Time</th><th>Pressure</th><th>Peel</th></tr></thead>
   <tbody>
-    <tr><td>Sawgrass chart, polyester fabric</td><td>205°C (400°F)</td><td>45 seconds</td><td>Medium</td><td>Remove the paper after pressing</td></tr>
-    <tr><td>Sawgrass polo walkthrough</td><td>204°C (400°F)</td><td>45 seconds</td><td>High</td><td>Remove the shirt, then the paper</td></tr>
-    <tr><td>Xpres T-shirt guide</td><td>190°C (374°F)</td><td>60–70 seconds</td><td>Medium</td><td>Hot</td></tr>
+    <tr><td>Sawgrass chart, polyester fabric</td><td>205°C (400°F)</td><td>45 seconds</td><td>Medium</td><td>Not listed on the chart</td></tr>
+    <tr><td>Sawgrass polo walkthrough, VersiFlex and TruePix</td><td>400°F (204°C)</td><td>45 seconds</td><td>High</td><td>Remove the shirt, then the paper</td></tr>
+    <tr><td>Xpres T-shirt guide</td><td>190°C</td><td>60–70 seconds</td><td>Medium</td><td>Hot</td></tr>
   </tbody>
 </table>
 </div>
-<p>Sawgrass call their chart a starting place and say the real result also depends on the blank, a calibrated press, colour management and practice. Their polo article prints 400°F (204°C) rather than 205°C, at high pressure rather than medium. Treat that as the same ballpark with a different pressure note, not as a third temperature you need to hit exactly.</p>
-<p>374°F next to the Xpres figure is a conversion. Xpres publish 190°C only. 400°F is what Sawgrass print; a straight conversion of 205°C is 401°F.</p>
-<h2>What will not sublimate</h2>
-<p><a href="/fabrics/cotton/">Cotton</a>, dark shirts and ordinary <a href="/fabrics/tote-bags/">canvas totes</a> are out. So are <a href="/pyjamas/sublimation/">100% cotton pyjamas</a>, including a white chest. <a href="/fabrics/nylon/">Nylon</a> is not on these charts and it scorches at this heat. <a href="/fabrics/poly-cotton/">Poly-cotton</a> only takes dye in the polyester portion. For a full-colour design on cotton, use <a href="/methods/dtf/">DTF</a> or cut <a href="/methods/standard-htv/">HTV</a> instead.</p>
-<p>If the image has a shadow or a double edge, that is <a href="/troubleshooting/sublimation-ghosting/">ghosting</a>: the paper moved, or the shirt shrank, while dye was still transferring. If the colour is weak, start with the <a href="/troubleshooting/faded-sublimation/">faded print</a> checks before you add time.</p>
-<p>Hard goods are a different table. <a href="/methods/sublimation-mugs/">Mugs</a> need a mug press and a much longer time. <a href="/methods/sublimation-hard-blanks/">MDF, metal, slate and acrylic</a> each have their own Sawgrass row.</p>
+<p>Sawgrass call the chart a starting place. The result also depends on the blank, a calibrated press, colour management and practice. The polo article prints 400°F (204°C) rather than 205°C, at high pressure rather than medium, and that walkthrough uses VersiFlex ink and TruePix paper. It is that project’s press.</p>
+<p>374°F beside 190°C is a conversion. Xpres publish 190°C only. 400°F is what Sawgrass print on both notes. A straight conversion of 205°C is 401°F.</p>
+<h2>How much polyester</h2>
+<p>The rows above do not change with the percentage on the label. What changes is how much of the shirt can take the dye.</p>
+<p>Sawgrass, writing about SubliJet UHD, say that ink works best with white 100% polyester, polycotton (65/35), or hard substrates. They do not print a separate time or temperature for the 65/35 blend. The polyester fabric row is still 205°C (400°F) for 45 seconds at medium pressure.</p>
+<p>Xpres’s beginner guide says the material must be polyester fabric with at least 65% polyester, or polyester-coated. On their sublimation clothing page they also answer a 50/50 shirt: you can press it, and the result is less vibrant and less permanent than on 100% polyester, because the dye only binds with the polyester fibres. They say a blend can look faded, or vintage, after washing, and that the better finish is 100% polyester or a garment labelled sublimation ready. They do not give the 50/50 its own temperature.</p>
+<p>Vinyl, DTF, scorch and dye migration are a different job, with different heats. Those sit on the <a href="/fabrics/polyester/">polyester heat press page</a>.</p>
+<h2>White and light fabric</h2>
+<p>Xpres say sublimation works on light-coloured polyester or on polymer-coated items. Cotton and dark garments stay blank, because there is no white sublimation ink. Sawgrass describe SubliJet UHD as the ink for white or light coloured substrates, and they name white 100% polyester in the same “works best” line as 65/35 polycotton. A white cotton shirt is still cotton. A dark polyester shirt has no white ink to cover the base colour.</p>
+<h2>Ghosting on the paper</h2>
+<p>A second, fainter copy of the design is ghosting. Xpres’s beginner guide says leaving the paper unfixed causes ghosting or a blurred print, and they name heat tape as the fix. Tape the edges. Their T-shirt method already does that job: print mirrored, tape the print face down, thread the shirt onto the press, cover it with a silicone sheet, then peel while hot. Pre-press the fabric first. The beginner guide says that clears moisture and creases before the paper goes down.</p>
+<p>A line in the shape of the paper edge is a different mark. Sawgrass’s polo walkthrough says the press can leave that line, and that tearing the paper edge so it feathers avoids it. When the image is still doubled after the paper was taped, the longer checks are on the <a href="/troubleshooting/sublimation-ghosting/">ghosting page</a>. A weak colour, with no second image, is the <a href="/troubleshooting/faded-sublimation/">faded print</a> list.</p>
+<h2>Shirts this chart does not cover</h2>
+<p><a href="/fabrics/cotton/">Cotton</a> and <a href="/pyjamas/sublimation/">100% cotton pyjamas</a> do not take the dye, including a white chest. <a href="/fabrics/nylon/">Nylon</a> is not on these charts. When the shirt is polyester and the transfer is vinyl or DTF, use the <a href="/fabrics/polyester/">polyester heat press page</a>. When the shirt is cotton, use <a href="/methods/dtf/">DTF</a> or <a href="/methods/standard-htv/">HTV</a>. Hard goods use other rows: <a href="/methods/sublimation-mugs/">mugs</a> and <a href="/methods/sublimation-hard-blanks/">MDF, metal, slate and acrylic</a>.</p>
 `
   },
   {

@@ -372,7 +372,7 @@ ${measureFigure()}
 <p>The chart labels the rows 6/12mths, 1/2y, 2/3y, 3/4y, 4/5y and 5/6y. Those are the six sizes these kids’ sets are sold in. Garment measurements are flat, not circular, and they are approximate. Nothing here says the sets run large or small. If you can lay a pair that already fits next to a tape, columns A to E will tell you more than the age on the label. Children in the same age band are not the same shape, and a tape around a child is not the same thing as the garment laid flat.</p>
 ${kidsTable()}
 ${designTable()}
-<p>Those widths are for a name or a small motif in <a href="/pyjamas/htv/">HTV</a> or <a href="/pyjamas/embroidery/">embroidery</a>. A filled embroidery design should sit at the smaller end. A long Christmas slogan often needs two lines rather than a wider one. Placement, on the white chest and off the raglan seams, is on the HTV page.</p>
+<p>Those widths are for a name or a small motif in <a href="/pyjamas/htv/">HTV</a> or <a href="/pyjamas/embroidery/">embroidery</a>. A filled embroidery design should sit at the smaller end. A long <a href="/pyjamas/christmas/">Christmas slogan</a> often needs two lines rather than a wider one. Placement, on the white chest and off the raglan seams, is on the HTV page.</p>
 <h2>Baby sets</h2>
 <p>The baby pyjamas are a separate set: long sleeves, 100% cotton, about 200 gsm, no brand label. They are not described as raglan. The size table is different, and it does not say whether “height” and “width” are taken the same way as A and B above. Read them as the figures printed for this set, still approximate.</p>
 <div class="table-wrap">
