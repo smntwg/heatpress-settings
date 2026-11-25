@@ -12,7 +12,7 @@ export const methodPages = [
     ],
     schema: "howto",
     sources: [
-      { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/", note: "150°C / 305°F, medium, 10–15 seconds, hot or cold peel" },
+      { label: "Siser EasyWeed", url: "https://siserstore.com/pages/easyweed", note: "150°C / 305°F, medium, 10–15 seconds, hot or cold peel" },
       { label: "Garment Films HTV application guidelines (PDF)", url: "https://www.garmentfilms.co.uk/downloads/645cf2144e810192Application_Guidelines_new.pdf", note: "One Flex, including 140°C for 8 seconds" },
       { label: "Siser EasyWeed Sub Block", url: "https://www.siserna.com/easyweed-sub-block/", note: "130°C blocker for dye migration" }
     ],
@@ -253,6 +253,7 @@ export const methodPages = [
     kicker: "Method",
     h1: "Sublimation on polyester fabric",
     lede: "Sublimation dye turns to gas and bonds with polyester. Sawgrass and Xpres publish different time and temperature pairs for that job, and they also say how much polyester the shirt needs.",
+    modified: "2026-11-25",
     crumbs: [
       { href: "/", label: "Home" },
       { href: "/methods/sublimation-polyester/", label: "Sublimation on polyester" }

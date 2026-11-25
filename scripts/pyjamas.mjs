@@ -86,7 +86,7 @@ const htvPage = {
   totalTime: "PT15M",
   notice: "Temperatures below are the film charts already published on this site. They are starting points. Test on a spare top. These pyjamas are about 200 gsm, so use the heavier-fabric row when a film prints one.",
   sources: [
-    { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/", note: "150°C, 10–15 seconds, medium, hot or cold peel, including 100% cotton" },
+    { label: "Siser EasyWeed", url: "https://siserstore.com/pages/easyweed", note: "150°C, 10–15 seconds, medium, hot or cold peel, including 100% cotton" },
     { label: "Garment Films application guidelines (PDF)", url: "https://www.garmentfilms.co.uk/downloads/645cf2144e810192Application_Guidelines_new.pdf", note: "One Flex, Stretch Flex and Premium Glitter" },
     { label: "Siser HI-5", url: "https://www.siser.com/cad-cut/hi-5/", note: "150°C for 5 seconds when the textile is heavier than 150 g/m²" },
     { label: "Siser EasyWeed Stretch", url: "https://www.siserna.com/easyweed-stretch/", note: "160°C, firm, 20 seconds" },
@@ -228,7 +228,7 @@ const sublimationPage = {
     { label: "Sawgrass sublimation heat press settings", url: "https://care.sawgrassink.com/hc/en-us/articles/10587333978011-Sublimation-Heat-Press-Settings", note: "polyester fabric, 205°C for 45 seconds" },
     { label: "Siser EasyWeed Sub Block", url: "https://www.siserna.com/easyweed-sub-block/", note: "130°C blocker under HTV, not a cotton sublimation coating" },
     { label: "Xpres, how to DTF", url: "https://www.xpres.co.uk/direct-to-film-how-to-guide", note: "DTF on cotton" },
-    { label: "Siser EasyWeed", url: "https://www.siserna.com/easyweed/", note: "HTV route for 100% cotton" }
+    { label: "Siser EasyWeed", url: "https://siserstore.com/pages/easyweed", note: "HTV route for 100% cotton" }
   ],
   related: [
     { href: "/methods/sublimation-polyester/", label: "Sublimation, when the shirt is polyester" },
@@ -342,6 +342,7 @@ const sizePage = {
   kicker: "Pyjamas",
   h1: "Size guide for kids' pyjamas",
   lede: "Flat measurements for the raglan sets, from 6–12 months to 5–6 years, plus a separate chart for the baby sets. The numbers are approximate. Age on the label is not a chest measurement.",
+  modified: "2026-11-25",
   crumbs: [
     { href: "/", label: "Home" },
     { href: "/pyjamas/size-guide/", label: "Pyjama size guide" }
